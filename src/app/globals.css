@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;700&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #c41e3a;
+  --color-primary-light: #e63946;
+  --color-primary-dark: #a0142e;
+  --color-gold: #d4a853;
+  --color-surface: #1a1a1a;
+  --color-surface-light: #2a2a2a;
+  --color-text-primary: #f5f5f5;
+  --color-text-muted: #9ca3af;
+  --color-text-dim: #6b7280;
+  --font-sans: "Inter", sans-serif;
+  --font-jp: "Noto Sans JP", serif;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0a0a0a;
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+.bg-gradient-radial {
+  background: radial-gradient(ellipse at 50% 0%, rgba(196, 30, 58, 0.15) 0%, transparent 70%),
+    radial-gradient(ellipse at 80% 100%, rgba(196, 30, 58, 0.08) 0%, transparent 50%),
+    #0a0a0a;
+}
+
+.bg-gradient-hero {
+  background: radial-gradient(ellipse at 50% 30%, rgba(196, 30, 58, 0.25) 0%, transparent 60%),
+    radial-gradient(ellipse at 20% 80%, rgba(212, 168, 83, 0.05) 0%, transparent 40%),
+    #0a0a0a;
+}
+
+.glow-red {
+  box-shadow: 0 0 30px rgba(196, 30, 58, 0.3), 0 0 60px rgba(196, 30, 58, 0.1);
+}
+
+.glow-gold {
+  box-shadow: 0 0 20px rgba(212, 168, 83, 0.2), 0 0 40px rgba(212, 168, 83, 0.05);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #f5f5f5 0%, var(--color-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.border-gradient {
+  border-image: linear-gradient(135deg, var(--color-primary), var(--color-gold)) 1;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
