@@ -80,6 +80,15 @@ export default function BookingForm() {
   const [focusedField, setFocusedField] = useState<string | null>(null);
   const [step, setStep] = useState(1);
 
+  // Helper to get local date in YYYY-MM-DD format (avoids UTC offset date blocking issues)
+  const getLocalDateString = () => {
+    const date = new Date();
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+  };
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
   ) => {
@@ -90,13 +99,14 @@ export default function BookingForm() {
     e.preventDefault();
     setStatus("sending");
 
-    const message = `*NUOVA PRENOTAZIONE MIZU SUSHI*\n\n*Ristorante:* ${form.ristorante}\n*Nome:* ${form.nome} ${form.cognome}\n*Persone:* ${form.persone}\n*Data:* ${form.data}\n*Ora:* ${form.ora}\n*Telefono:* ${form.telefono}${form.note ? `\n*Note:* ${form.note}` : ""}`;
+    const ristoranteScelto = restaurants.find(r => r.id === form.ristorante)?.name || form.ristorante;
+    const message = `*NUOVA PRENOTAZIONE*\n\n*Ristorante:* ${ristoranteScelto}\n*Nome:* ${form.nome} ${form.cognome}\n*Persone:* ${form.persone}\n*Data:* ${form.data}\n*Ora:* ${form.ora}\n*Telefono:* ${form.telefono}${form.note ? `\n*Note:* ${form.note}` : ""}`;
 
     try {
       const res = await fetch("/api/booking", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message }),
+        body: JSON.stringify({ message, ristorante: form.ristorante }),
       });
 
       if (!res.ok) {
@@ -145,6 +155,9 @@ export default function BookingForm() {
   }
 
   if (status === "error") {
+    const selectedRestaurant = restaurants.find(r => r.id === form.ristorante);
+    const telNumber = selectedRestaurant?.tel || "+39 0439 068034";
+    const telLink = `tel:${telNumber.replace(/\s+/g, "")}`;
     return (
       <div className="text-center py-16 animate-fade-in">
         <div className="relative w-20 h-20 mx-auto mb-6">
@@ -167,10 +180,10 @@ export default function BookingForm() {
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-10 animate-fade-in-up" style={{ animationDelay: "400ms" }}>
           <a
-            href="tel:+390439068034"
+            href={telLink}
             className="px-8 py-3.5 bg-primary hover:bg-primary-light text-white text-sm tracking-widest uppercase rounded-lg transition-all duration-300"
           >
-            Chiama +39 0439 068034
+            Chiama {telNumber}
           </a>
           <button
             onClick={() => { setStatus("idle"); setStep(1); }}
@@ -334,7 +347,7 @@ export default function BookingForm() {
                 onChange={handleChange}
                 onFocus={() => setFocusedField("data")}
                 onBlur={() => setFocusedField(null)}
-                min={new Date().toISOString().split("T")[0]}
+                min={getLocalDateString()}
                 className={`w-full px-4 py-3.5 bg-surface/50 border rounded-lg text-white text-sm 
                   focus:outline-none focus:ring-1 transition-all duration-300 [color-scheme:dark]
                   hover:border-white/20

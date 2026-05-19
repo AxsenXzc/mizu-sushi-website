@@ -1,0 +1,949 @@
+URA VEGETARIANO
+avocado, cetrioli e insalata
+8,00
+130 ....
+URA SPICY SALMON
+salmone, avocado e salsa piccante
+9,00
+131 ....
+URA MAGURO
+tonno e avocado
+10,00
+133 ....
+URA SPICY TUNA
+tonno, avocado e salsa piccante
+10,00
+132 ....
+URA CALIFORNIA
+surimi, avocado e maionese*
+127 ....
+8,00
+URA MIURA
+salmone cotto, insalata,
+philadelphia e salsa teriyaki
+126 ....
+10,00
+URA PHILADELPHIA
+philadelphia, gamberi cotti e
+avocado*
+8,00
+129....
+URA SAKE
+salmone, avocado e philadelphia
+8,00
+128 ....
+URA EBITEN
+gamberi fritti, insalata, maionese, kataifi
+e salsa teriyaki*
+10,00
+134 ....
+URA BRANZINO FRITTO
+branzino fritto, philadelphia, avocado,
+salsa teriyaki e cipolla fritto
+10,00
+136 ....
+URA SALMONE FRITTO
+salmone fritto, philadelphia
+kataifi e salsa teriyaki
+10,00
+135 ....
+URA POLLO FRITTO
+pollo fritto, maionese, insalata
+e salsa teriyaki*
+137 ....
+10,00
+URA KASAI
+salmone, philadelphia, granulato tempura,
+salsa teriyaki
+138 ....
+8,00
+URA PISTACCHIO
+gamberi fritti, maionase,
+pistacchio, salsa teriyaki
+14,00
+139 ....
+URA TIGER
+gamberi fritti e maionese esterno
+salmone, salsa teriyaki e kataifi*
+13,00
+140 ....
+URA SUPER
+salmone, avocado, philadelphia
+esterno avocado, tonno crudo,
+tobiko e salsa teriyaki
+142 ....
+13,00
+URA LIME
+salmone fritto, philadelphia, esterrno
+salmone, salsa lime, granulato tempura
+143 ....
+14,00
+URA ARCOBALENO
+surimi, avocado, maionese, esterno
+pesce misto e salsa teriyaki*
+141 ....
+13,00
+URA SMOKED
+gambero fritto, esterno salmone
+afumicato, salsa, rucola, kataifii
+13,00
+144 ....
+URA FELICIT
+salmone, avocado, philadelphia,
+maionase, salsa piccante, teriyaki
+145 ....
+15,00
+URA BLACK SAKE
+riso venere, salmone, avocado
+e philadelphia
+12,00
+149 ....
+URA BLACK TIGER
+riso venere, gamberi fritti,
+insalata, philadelphia, esterno
+salmone, salsa di tartufo
+146 ....
+15,00
+URA BLACK MIURA
+riso venere, salmone cotto,
+insalata, philadelphia, esterno
+salsa teriyaki e kataifi
+147 ....
+12,00
+URA BLACK AVOCADO
+riso venere, philadelphia,
+avocado, esterno madorle
+12,00
+148 ....
+URA BLACK VEGETARIANO
+riso venere, avocado, cetrioli
+e insalata
+10,00
+150 ....
+URA VENERE CALIFORNIA
+151 ....
+riso venere, surimi, avocado
+e maionese*
+9,00
+URA PINK FRITTO
+riso rosa, verdure fritte, sesamo,
+esterno salsa teriyaki
+153 ....
+13,00
+URA PINK MANGO
+riso rosa, mango, salmone, piladelphia,
+esterno salsa mango
+154 ....
+13,00
+URA PINK SAKE
+riso rosa, salmone, avocado,
+philadelphia esterno salsa sanshi speciale,
+152 ....
+13,00
+UDON CON GAMBERI
+gamberi, verdure miste*
+9,00
+155 ....
+UDON CON POLLO
+pollo, verdure miste*
+8,00
+156 ....
+UDON CON MANZO
+manzo, verdure miste*
+8,00
+157 ....
+YAKI SOBA MANZO
+spaghetti di verdure e manzo
+8,00
+160 ....
+YAKI SOBA EBI
+spaghetti di verdure e gamberi*
+8,00
+159 ....
+UDON CON VERDURE
+verdure miste
+6,00
+158 ....
+GNOCCHI DI RISO
+CON VERDURE
+6,00
+161 ....
+166 ....
+SPAGHETTI DI SOIA
+CON VERDURE MISTE
+verdure miste
+6,00
+164 ....
+SPAGHETTI DI SOIA
+CON GAMBERI
+gamberi e verdure miste*
+8,00
+SPAGHETTI DI RISO CON GAMBERI
+gamberi, verdure miste e uova*
+8,00
+162 ....
+SPAGHETTI DI RISO
+CON VERDURE MISTE
+verdure miste e uova
+6,00
+163 ....
+165 ....
+SPAGHETTI DI SOIA
+CON CARNE PICCANTE
+carne di maiale macinato e
+verdure miste piccante*
+8,00
+RAMEN IN BRODO
+CON GAMBERI E UOVA
+gamberi, verdure miste e uova*
+8,00
+167 ....
+RAMEN IN BRODO
+CON VERDURE E UOVA
+verdure miste e uova
+6,00
+170 ....
+RAMEN IN BRODO
+CON MANZO E UOVA
+manzo, verdure miste e uova*
+8,00
+169 ....
+RAMEN IN BRODO
+CON POLLO E UOVA
+pollo, verdure miste e uova*
+8,00
+168 ....
+GOHAN
+riso bianco con sesamo
+171 ....
+2,50
+RISO SALTATO
+CON VERDURE MISTE
+verdure miste e uova
+172 ....
+6,00
+RISO SALTATO CON
+GAMBERI
+verdure miste, gamberi e uova*
+173 ....
+8,00
+RISO SALTATO CON
+MANZO
+manzo, verdure miste e uova*
+174 ....
+7,00
+RISO VENERE SALTATO
+CON VERDURE E GAMBERI
+177 ....
+8,00
+RISO ALLA CANTONESE
+piselli, prosciutto cotto e uova*
+176 ....
+6,00
+RISO SALTATO CON POLLO
+pollo, verdure miste e uova*
+175 ....
+7,00
+POLLO CON SALSA PICCANTE
+pollo, peperoni, cipolla
+e salsa piccante*
+6,00
+179 ....
+POLLO AL LIMONE
+pollo fritto con salsa di limone
+e sesamo*
+6,00
+180 ....
+POLLO CON FUNGHI
+E BAMBU'*
+6,00
+181 ....
+POLLO ALLE MANDORLE
+pollo, mandorle, peperoni e cipolla*
+6,00
+178 ....
+POLLO CON
+VERDURE*
+182 ....
+6,00
+POLLO AGRODOLCE
+pollo, verdure e ananas*
+184 ....
+6,00
+GERMOGLI DI SOIA
+185 ....
+4,00
+VERDURE MIX
+186 ....
+5,00
+FUNGHI E BAMBU'
+187 ....
+5,00
+POLLO AL CURRY
+pollo, curry e verdure mix*
+183 ....
+6,00
+MANZO CON PATATE*
+6,50
+188 ....
+MANZO CON VERDURE MIX*
+6,50
+189 ....
+MANZO CON FUNGHI
+E BAMBÙ*
+6,50
+191 ....
+MANZO AL CURRY
+manzo, patate, cipolla, latte
+al cocco e salsa al curry*
+6,50
+192 ....
+MANZO CON SALSA PICCANTE
+6,50
+manzo, peperoni, cipolla
+e salsa piccante*
+190 ....
+GAMBERI CON SALSA
+PICCANTE
+gamberi, peperoni, cipolla
+e salsa piccante*
+195 ....
+8,00
+GAMBERI SALE E PEPE
+gamberi, peperoni, cipolla,
+sale e pepe*
+196 ....
+8,00
+GAMBERI AL CURRY
+gamberi, cipolla, latte al cocco
+e salsa al curry*
+197 ....
+8,00
+GAMBERI SALTATO
+CON VERDURE*
+193 ....
+8,00
+GAMBERI CON BAMBÙ
+E FUNGHI*
+194 ....
+8,00
+GAMBERONI*
+9,00
+198 ....
+YAKI EBI
+spiedini di gamberi*,
+salsa teriyaki
+6,00
+202 ....
+TERIYAKI MAGURO TEPPAN
+tonno con salsa teriyaki*
+11,00
+200 ....
+VERDURE ALLA GRIGLIA
+peperoni, zucchine
+5,00
+199 ....
+TERIYAKI SUZUKI TEPPAN
+branzino con salsa teriyaki*
+9,00
+201 ....
+CALAMARI ALLA GRIGLIA
+calamari, salsa teriyaki
+8,00
+204 ....
+SPIEDINI DI POLLO
+spiedini di pollo marinato*
+salsa teriyaki
+6,00
+203 ....
+TEMPURA YASAI
+verdure miste fritte
+206 ....
+8,00
+TEMPURA EBI
+gamberi fritti*
+205 ....
+10,00
+TEMPURA MISTO
+gamberi e verdure fritte*
+207 ....
+9,00
+TEMPURA POLLO
+pollo fritto*
+208 ....
+8,00
+IKA FRY
+calamari fritti*
+209 ....
+10,00
+GELATO FRITTO 4,50
+TARTUFO BIANCO 4,50
+TARTUFO NERO 4,50
+TARTUFO AL CAFFE' 4,50
+Uramaki Fritto - 8pz
+Uramaki Speciale - 8pz
+Uramaki Venere - 8pz
+Uramaki Pink - 8pz Pollo e Verdure
+Manzo
+Gamberi
+Piastra
+Tempura - fritto
+Dolci non compresi nell’offerta di 22,00 €
+Spaghetti Giapponesi
+Spaghetti Cinesi
+Ramen
+Riso
+Pollo
+Uramaki- 8pz
+MOCHI MISTO 3pz 5,50
+COPPA AL COCCO 5,00
+PROFITEROL NERO 3 pz 5,00
+CHEESE CAKE 5,50
+TARTUFO AL PISTACCHIO 5,50
+TIRAMISU 4,50
+TORTINO AL CIOCCOLATO 4,50
+GELATO 3,50
+MIZU ASIAN RESTAURANT
+MENU ASPORTO
+5 PIATTI 22,00 €
+Presso il nuovo
+Centro Commerciale Altanon
+32032 Feltre (BL)
+Tel. 0439 068034
+TEMAKI SOIA GAMBERO
+foglio di soia, gambero cotto,
+avocado, maionase
+5,00
+91 ....
+TEMAKI BLACK SAKE
+foglio di soia, riso venere,
+avocado, salmone e
+philadelphia
+5,50
+88 ....
+TEMAKI BLACK MAGURO
+foglio di soia, riso venere,
+avocado, tonno
+5,50
+89 ....
+TEMAKI SOIA VEGETARIANO
+foglio di soia, cetrioli, insalata,
+avocado
+5,00
+90 ....
+NIGIRI AMAEBI
+gamberi crudi*
+4,00
+65 ....
+NIGIRI SUZUKI
+branzino
+3,00
+64 ....
+NIGIRI TAKO
+polipo*
+3,00
+66 ....
+NIGIRI AVOCADO
+avocado
+3,50
+63 ....
+Antipasti
+Insalata
+Zuppe
+Tartare
+Nighiri - 2 pz
+Temaki Soia - 1 pz
+Temaki
+Chirashi
+Futomaki - 5 pz
+Gunkan - 2 pz
+Gunkan Speciale - 2 pz
+Tataki e Duton
+Sushi Misto
+Sashimi 6 pz
+Carpaccio
+PATATINE FRITTE
+stick patate*
+2,50
+3 ....
+PANE FRITTO 2 pz
+3,00
+4 ....
+INVOLTINO 2pz
+2 ....
+verdure miste*e carne
+3,00
+STICK GAMBERI 2pz
+involtini di gamberi*
+4,00
+1 ....
+RAVIOLI DI CRISTALLO 3pz
+raviolo gamberi al vapore
+7,00
+8 .... SHAOMAI 3 pz
+carne di maiale e gamberi*
+5,00
+6 ....
+GYOZA 3 pz
+carne di maiale e verdure*
+5,00
+5 ....
+GYOZA DI VERDURE 3 pz
+verdure miste*
+5,00
+7 ....
+PANE CINESE 2 pz
+pane al vapore*
+3,00
+9 ....
+PANE DOLCE CONIGLIO
+farina, uova al vapore
+3,50
+14 ....
+EDAMAME
+fagiolini di soia e sale*
+4,00
+13 ....
+WAKAME NERO
+insalata di alghe e sesamo
+4,00
+12 ....
+GOMA WAKAME
+insalata di alghe piccante*
+5,00
+10 ....
+COCKTAIL DI GAMBERI
+gamberetti con salsa rosa*
+7,00
+11 ....
+INSALATA SASHIMI
+insalata con fette di branzino,
+gamberi, salmone, sesamo e
+salsa*
+6,00
+19 ....
+INSALATA GRANCHIO
+insalata polpa di surimi,
+sesamo e salsa*
+5,00
+18 ....
+INSALATA MAIS
+insalata mais, sesamo
+e salsa
+5,00
+17 ....
+INSALATA ALGHE
+insalata mista con alghe,
+sesamo e salsa
+5,00
+16 ....
+INSALATA GOMA WAKAME
+insalata mista con goma wakame*,
+sesamo e salsa
+5,00
+15 ....
+INSALATA DI POLIPO
+E RUCOLA
+7,00
+20 ....
+ZUPPA DI MAIS
+zuppa con mais e uova
+4,00
+24 ....
+MISOSHIRO
+zuppa di miso (tofu, alghe
+giapponese, erba cippolina)
+3,00
+21 ....
+FRUTTI DI MARE
+zuppa con surimi, gamberi, uova*
+4,00
+23 ....
+ZUPPA AGROPICCANTE
+zuppa con uova, toufu,
+verdure miste e pollo
+4,00
+22 ....
+TARTAR SUZUKI
+branzino tritato con salsa
+di sesamo
+8,00
+30 ....
+TARTAR TUNA
+tonno tritato con salsa di
+sesamo
+6,00
+31 ....
+TARTAR SAKE
+salmone tritato con salsa
+di sesamo
+8,00
+29 ....
+TARTAR SPECIALE SALMONE
+salmone tritato, avocado, uova di pesce
+volante, salsa di sesamo, riso bianco
+32 ....
+14,00
+DUTOU FLAMBE' PURE
+salmone scottato, purè di patate
+8,00
+41 ....
+DUTOU FLAMBE' EBI
+salmone scottato, tempura di
+gamberi*, salsa teriyaki
+8,00
+42 ....
+DUTOU SAKE SCOTTATO
+involtino di salmone scottato
+con insalata, cetriolo, salsa
+di sesamo e wasabi
+4,00
+40 ....
+DUTOU SAKE
+involtino di salmone con cetriolo,
+salsa di sesamo e wasabi
+4,00
+39 ....
+TATAKI MAGURO
+tonno scottato con sesamo
+e salsa teriyaki
+12,00
+38 ....
+TATAKI SAKE
+salmone scottato con
+sesamo e salsa teriyaki
+11,00
+37 ....
+SASHIMI SAKE
+salmone
+45 ....
+8,00
+SASHIMI MAGURO
+tonno
+46 ....
+9,00
+SASHIMI SUZUKI
+branzino
+47 ....
+8,00
+CARPACCIO MAGURO
+tonno, salsa di sesamo
+e wasabi
+12,00
+50 ....
+CARPACCIO SUZUKI
+branzino, salsa di sesamo
+e wasabi
+10,00
+51 ....
+CARPACCIO DI POLIPO
+polipo, salsa di sesamo
+e wasabi
+11,00
+52 ....
+CARPACCIO SAKE
+salmone, salsa di sesamo
+e wasabi
+9,00
+49 ....
+CARPACCIO MISTO
+salmone, tonno, branzino,
+salsa di sesamo e wasabi
+12,00
+48 ....
+SUSHI SASHIMI MIX
+4 uramaki, 4 hossomaki,
+4 nigiri, 6 sashimi mix,
+1 gambero rosso
+22,00
+54 ....
+SUSHII MIX
+4 hossomaki, 4 uramaki,
+4 nigiri
+15,00
+53 ....
+NIGIRI BLACK SUZUKI
+branzino
+60 ....
+3,50
+NIGIRI BLACK MAGURO
+tonno
+59 ....
+6,00
+NIGIRI BLACK SAKE
+salmone
+58 ....
+3,50
+NIGIRI BLACK KIRO
+salmone scottato, philadelphia
+e kataifi
+57 ....
+4,50
+NIGIRI MIX
+6 pz misto dello chef
+9,00
+55 ....
+NIGIRI SAKE KIRO
+Salmone scottato, salsa teriyaki
+e sesamo, salsa piccante
+56 ....
+4,00
+NIGIRI EBI
+gambero cotto*
+69 ....
+3,00
+NIGIRI SAKE
+salmone
+3,00
+61 ....
+67 ....
+NIGIRI MAGURO
+tonno
+3,50
+NIGIRI SURIMI
+polpa di granchio*
+2,50
+62 ....
+NIGIRI ANGUILLA
+anguilla* e sesamo
+68 ....
+4,00
+GUNKAN IKURA
+uova di salmone
+e alghe esterno*
+5,00
+75 ....
+GUNKAN TOBIKO
+uova di pesce volante
+e alghe esterno*
+5,00
+70 ....
+GUNKAN WAKAME
+alghe giapponese con
+alghe esterno*
+3,00
+74 ....
+GUNKAN SURIMI
+surimi, gamberi cotti, maionese,
+alghe esterno*
+3,50
+73 ....
+GUNKAN SPICY SALMON
+salmone piccante e alghe esterno
+4,00
+71 ....
+GUNKAN SPICY TUNA
+tonno piccante e alghe esterno
+4,00
+72 ....
+GUNKAN FRASH
+philadelphia,
+esterno salmone
+4,50
+81 ....
+GUNKAN KATAIFI
+philadelphia, esterno salmone
+scottato e kataifi
+5,00
+76 ....
+GUNKAN SPICY ZUCCHINE
+salmone piccante, maionese,
+zucchine esterno e salsa gamberi
+4,50
+79 ....
+GUNKAN ZUCCHINE
+surimi, gamberi cotti, maionese
+e zucchine esterno*
+4,50
+80 ....
+GUNKAN SCOTTATO SURIMI
+surimi, gamberi cotti, maionese,
+esterno salmone scottato
+e salsa gamberi
+5,00
+77 ....
+GUNKAN MAIS
+mais, esterno salmone
+4,50
+78 ....
+GUNKAN SPICY MAGURO
+tonno esterno con salsa
+piccante
+5,00
+83 ....
+GUNKAN SPICY SAKE
+salmone esterno con
+salsa piccante
+5,00
+82 ....
+TEMAKI SOIA EBI
+foglio di soia, avocado,
+gambero cotto
+5,00
+86 ....
+TEMAKI SOIA SAKE
+foglio di soia, avocado,
+salmone e philadelphia
+5,00
+84 ....
+TEMAKI SOIA MAGURO
+foglio di soia, avocado,
+tonno
+5,00
+85 ....
+TEMAKI SOIA YASAI
+foglio di soia, avocado,
+cetrioli, insalata
+5,00
+87 ....
+TEMAKI CALIFORNIA
+surimi, gambero cotto
+e avocado*
+4,00
+99 ....
+TEMAKI VEGETARIANO
+avocado, cetrioli, insalata
+4,00
+95 ....
+TEMAKI EBI
+gambero cotto e avocado*
+4,00
+94 ....
+TEMAKI SAKE
+salmone crudo, avocado
+e philadelphia
+4,00
+92 ....
+TEMAKI TEKKA
+tonno crudo e avocado
+5,00
+93 ....
+TEMAKI EBI FRITTO
+gambero fritto, insalata,
+maionese e salsa teriyaki*
+5,00
+96 ....
+TEMAKI SPICY SALMON
+salmone e salsa piccante
+4,00
+97 ....
+TEMAKI SPICY TUNA
+tonno e salsa piccante
+4,50
+98 ....
+CHIRASHI MISTO
+riso con pesce misto
+e sesamo
+100 ....
+12,00
+CHIRASHI SAKE
+riso con salmone e sesamo
+101 ....
+11,00
+CHIRASHI TUNA
+riso con tonno e sesamo
+102 ....
+12,50
+FUTO VEGETARIANO
+insalata, cetrioli, avocado
+105 ....
+6,00
+FUTO FRITTO
+salmone, avocado, philadelphia,
+kataifi e salsa teriyaki
+106 ....
+9,00
+FUTO PHILADELPHIA
+salmone, philadelphia, avocado
+e salsa teriyaki
+104 ....
+7,00
+FUTO CALIFORNIA
+surimi, avocado e maionese*
+103 ....
+7,00
+FUTO SOY PHILADELPHIA
+foglia di soia, salmone,
+philadelphia e avocado
+107 ....
+8,00
+FUTO SOY VEGETARIANO
+foglia di soia, insalata, cetrioli,
+avocado
+108 ....
+7,00
+109 ....
+FUTO SOY KATAIFI
+foglia di soia, salmone, avocado,
+philadelphia, esterno kataifi e
+salsa teriyaki
+9,00
+HOSSO AVOCADO
+avocado
+6,00
+116 ....
+HOSSO KAPPA
+cetrioli
+5,00
+111 ....
+HOSSO TAKUAN
+rapa gialla
+6,00
+113 ....
+HOSSO EBI
+gamberi cotti*
+6,00
+115 ....
+HOSSO SAKE
+salmone
+6,00
+110 ....
+HOSSO MAGURO
+tonno
+7,00
+114 ....
+HOSSO SURIMI
+surimi*
+5,00
+112 ....
+HOSSO FRITTO CON FRAGOLA
+salmone, philadelphia e fragola
+117 ....
+8,00
+HOSSO FRITTO CON MANGO
+salmone, philadelphia e mango
+118 ....
+8,00
+HOSSO FRITTO
+salmone, philadelphia e salsa teriyaki
+119 ....
+7,00
+HOSSO SOY MANGO
+foglio di soia, mango
+8,00
+120 ....
+HOSSO SOY AVOCADO
+foglio di soia, avocado
+8,00
+121 ....
+HOSSO SOY SURIMI
+foglia di soia, surimi, gambero cotto
+e maionese
+9,00
+124 ....
+HOSSO SOY BLACK SURIMI
+foglia di soia, riso venere, surimi
+e gambero cotto
+9,00
+125 ....
+HOSSO SOY SAKE
+foglia di soia, salmone
+8,00
+122 ....
+HOSSO SOY MAGURO
+foglia di soia, tonno
+8,00
+123 ....
+Hossomaki - 8pz
+Hossomaki Fritti - 8pz
+Hossomaki Soy - 8pz

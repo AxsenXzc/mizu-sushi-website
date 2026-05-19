@@ -1,6 +1,5 @@
 import ScrollReveal from "@/components/ScrollReveal";
 import SectionTitle from "@/components/SectionTitle";
-import { restaurants } from "@/lib/data";
 
 export default function ChiSiamoPage() {
   return (
@@ -37,7 +36,7 @@ export default function ChiSiamoPage() {
           <ScrollReveal>
             <SectionTitle
               title="La Nostra Storia"
-              subtitle="Un ristorante che unisce tradizione giapponese e cinese con ingredienti di prima qualità."
+              subtitle="Un ristorante che unisce tradizione e innovazione con ingredienti di prima qualità."
             />
           </ScrollReveal>
           <ScrollReveal delay={200}>
@@ -45,88 +44,58 @@ export default function ChiSiamoPage() {
               <p>
                 <strong className="text-white">Mizu Sushi Ristorante</strong> nasce
                 dalla passione per la cucina orientale e dal desiderio di portare
-                a Feltre un&apos;esperienza autentica. Situato presso il Centro
-                Commerciale Altanon, in Viale Monte Grappa 8, il ristorante offre
-                un ambiente accogliente e raffinato dove gustare il meglio della
-                tradizione giapponese e cinese.
+                a Feltre un&apos;esperienza culinaria autentica e indimenticabile. 
+                Situato presso il Centro Commerciale Altanon, in Viale Monte Grappa 8, 
+                il nostro ristorante offre un ambiente accogliente, moderno e raffinato 
+                dove gustare il meglio della tradizione giapponese e cinese.
               </p>
               <p>
-                La ragione sociale <strong className="text-white">MIZU Ristorante S.A.S. di He Lixian &amp; C.</strong>{" "}
-                rappresenta un gruppo in crescita, che gestisce con la stessa
-               dedizione e attenzione due locali affiliati: Shanghai Sushi a Feltre
-                e Asia Sushi a Belluno, tutti accomunati dalla filosofia Asiann.
+                La nostra dedizione quotidiana si riflette nella cura dei dettagli, 
+                dall'attenta selezione delle materie prime fino alla presentazione 
+                elegante di ogni portata. Crediamo che il cibo non sia solo nutrimento, 
+                ma un'arte capace di regalare emozioni uniche a chi lo assapora.
               </p>
               <p>
                 Il nostro obiettivo è offrire ai clienti un&apos;esperienza culinaria
                 completa, con piatti preparati al momento utilizzando ingredienti
-                freschissimi. Dal sushi preparato dai nostri chef ai piatti caldi
-                della tradizione, ogni portata racconta una storia di passione e
-                competenza.
+                freschissimi. Dal sushi creato a regola d'arte dai nostri chef ai piatti caldi
+                della tradizione asiatica, ogni portata racconta una storia di passione, 
+                qualità e competenza.
               </p>
             </div>
           </ScrollReveal>
         </div>
       </section>
 
-      {/* Il Gruppo */}
-      <section className="py-20 px-4 bg-[#0d0d0d]">
-        <div className="max-w-7xl mx-auto">
-          <ScrollReveal>
-            <SectionTitle
-              title="Il Nostro Gruppo"
-              subtitle="Tre ristoranti, una sola filosofia: qualità, freschezza e tradizione."
-            />
-          </ScrollReveal>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {restaurants.map((r, i) => (
-              <ScrollReveal key={r.id} delay={i * 150}>
-                <div className="p-8 bg-surface rounded-lg border border-white/5 text-center group hover:border-primary/30 transition-all duration-300">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                    <span className="text-2xl font-[family-name:var(--font-jp)] text-primary">
-                      {r.id === "mizu" ? "水" : r.id === "shanghai" ? "海" : "味"}
-                    </span>
-                  </div>
-                  <h3 className="text-lg font-semibold text-white mb-3">
-                    {r.name}
-                  </h3>
-                  <p className="text-sm text-text-muted mb-2">{r.address}</p>
-                  <p className="text-sm text-text-muted">{r.owner}</p>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Valori */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-[#0d0d0d]">
         <div className="max-w-5xl mx-auto">
           <ScrollReveal>
             <SectionTitle
               title="I Nostri Valori"
-              subtitle="Cosa ci guida ogni giorno."
+              subtitle="Cosa ci guida ogni giorno nella nostra cucina."
             />
           </ScrollReveal>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 title: "Freschezza",
-                desc: "Selezioniamo solo ingredienti di prima qualità, con consegne giornaliere per garantire la massima freschezza.",
+                desc: "Selezioniamo solo ingredienti di prima qualità, con consegne giornaliere per garantire la massima freschezza in ogni piatto.",
                 icon: "✦",
               },
               {
                 title: "Tradizione",
-                desc: "Rispettiamo le ricette originali della cucina giapponese e cinese, con chef esperti e appassionati.",
+                desc: "Rispettiamo le ricette originali della cucina asiatica, portate in tavola da chef esperti e appassionati.",
                 icon: "✦",
               },
               {
                 title: "Accoglienza",
-                desc: "Ogni ospite è unico. Ci impegniamo per offrire un servizio attento e un'atmosfera calda e raffinata.",
+                desc: "Ogni ospite è unico. Ci impegniamo per offrire un servizio attento, rapido e un'atmosfera calda e raffinata.",
                 icon: "✦",
               },
             ].map((v, i) => (
               <ScrollReveal key={i} delay={i * 150}>
-                <div className="text-center p-8">
+                <div className="text-center p-8 rounded-2xl bg-surface border border-white/5 hover:border-primary/30 transition-all duration-300">
                   <span className="text-3xl text-gold mb-4 block">{v.icon}</span>
                   <h3 className="text-lg font-semibold text-white mb-3">
                     {v.title}

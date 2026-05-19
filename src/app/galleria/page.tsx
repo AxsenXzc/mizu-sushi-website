@@ -4,24 +4,34 @@ import { useState } from "react";
 import ScrollReveal from "@/components/ScrollReveal";
 import SectionTitle from "@/components/SectionTitle";
 
-const categories = ["Tutte", "Piatti", "Ristorante", "Interni"];
+const categories = ["Tutte", "Piatti", "Locale"];
 
-const placeholderImages = Array.from({ length: 12 }, (_, i) => ({
-  id: i,
-  category:
-    i < 4 ? "Piatti" : i < 8 ? "Ristorante" : "Interni",
-  label: i < 4 ? "Piatto" : i < 8 ? "Ristorante" : "Interno",
-  index: (i % 4) + 1,
-}));
+const galleryImages = [
+  { id: 1, category: "Piatti", src: "/images/gallery/piatto.jpg", label: "Specialità Sushi 1" },
+  { id: 2, category: "Piatti", src: "/images/gallery/piatto2.jpg", label: "Specialità Sushi 2" },
+  { id: 3, category: "Piatti", src: "/images/gallery/piatto3.jpg", label: "Specialità Sushi 3" },
+  { id: 4, category: "Piatti", src: "/images/gallery/piatto4.jpg", label: "Specialità Cucina Cinese" },
+  { id: 7, category: "Locale", src: "/images/gallery/locale1.jpg", label: "Interno Ristorante 1" },
+  { id: 8, category: "Locale", src: "/images/gallery/locale2.jpg", label: "Interno Ristorante 2" },
+  { id: 9, category: "Locale", src: "/images/gallery/locale3.jpg", label: "Zona Tavoli" },
+  { id: 10, category: "Locale", src: "/images/gallery/locale4.jpg", label: "Ingresso Ristorante" },
+  { id: 11, category: "Locale", src: "/images/gallery/locale5.jpg", label: "Dettaglio Design" },
+  { id: 12, category: "Locale", src: "/images/gallery/locale6.jpg", label: "Bancone Sushi" },
+];
 
 export default function GalleriaPage() {
   const [activeCategory, setActiveCategory] = useState("Tutte");
-  const [selectedImage, setSelectedImage] = useState<number | null>(null);
+  const [selectedImage, setSelectedImage] = useState<typeof galleryImages[0] | null>(null);
+  const [brokenImages, setBrokenImages] = useState<Record<number, boolean>>({});
+
+  const handleImageError = (id: number) => {
+    setBrokenImages((prev) => ({ ...prev, [id]: true }));
+  };
 
   const filtered =
     activeCategory === "Tutte"
-      ? placeholderImages
-      : placeholderImages.filter((img) => img.category === activeCategory);
+      ? galleryImages
+      : galleryImages.filter((img) => img.category === activeCategory);
 
   return (
     <>
@@ -38,12 +48,12 @@ export default function GalleriaPage() {
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <ScrollReveal>
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              Galleria
+              Galleria Foto
             </h1>
           </ScrollReveal>
           <ScrollReveal delay={200}>
             <p className="text-lg text-text-muted max-w-2xl mx-auto">
-              Scorri le immagini del nostro ristorante e dei nostri piatti.
+              Scorri le immagini del nostro ristorante e dei nostri piatti più gustosi.
             </p>
           </ScrollReveal>
         </div>
@@ -70,53 +80,72 @@ export default function GalleriaPage() {
           </ScrollReveal>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {filtered.map((img, i) => (
-              <ScrollReveal key={img.id} delay={i * 80}>
-                <button
-                  onClick={() => setSelectedImage(img.id)}
-                  className="group relative w-full aspect-[4/3] bg-surface rounded-lg overflow-hidden border border-white/5 hover:border-primary/30 transition-all duration-300"
-                >
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-16 h-16 mx-auto rounded-full bg-primary/10 flex items-center justify-center mb-3">
-                        <svg className="w-8 h-8 text-primary/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
+            {filtered.map((img, i) => {
+              const isBroken = brokenImages[img.id];
+              return (
+                <ScrollReveal key={img.id} delay={i * 80}>
+                  <button
+                    onClick={() => {
+                      if (!isBroken) {
+                        setSelectedImage(img);
+                      }
+                    }}
+                    disabled={isBroken}
+                    className="group relative w-full aspect-[4/3] bg-surface rounded-lg overflow-hidden border border-white/5 hover:border-primary/30 transition-all duration-300 flex items-center justify-center"
+                  >
+                    {isBroken ? (
+                      <div className="text-center p-4">
+                        <div className="w-12 h-12 mx-auto rounded-full bg-white/5 flex items-center justify-center mb-2">
+                          <svg className="w-6 h-6 text-text-dim" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                          </svg>
+                        </div>
+                        <p className="text-xs text-text-dim uppercase tracking-wider">
+                          {img.label}
+                        </p>
+                        <p className="text-[10px] text-primary mt-1">Carica: {img.src.replace("/images/", "")}</p>
                       </div>
-                      <p className="text-xs text-text-dim tracking-widest uppercase">
-                        {img.category} {img.index}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-all duration-300" />
-                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <p className="text-sm text-white">
-                      {img.category} — Foto {img.index}
-                    </p>
-                  </div>
-                </button>
-              </ScrollReveal>
-            ))}
+                    ) : (
+                      <>
+                        <img
+                          src={img.src}
+                          alt={img.label}
+                          onError={() => handleImageError(img.id)}
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                          <p className="text-sm text-white font-medium">
+                            {img.label}
+                          </p>
+                        </div>
+                      </>
+                    )}
+                  </button>
+                </ScrollReveal>
+              );
+            })}
           </div>
 
-          <ScrollReveal delay={200}>
-            <div className="text-center mt-12 p-8 rounded-lg bg-surface border border-white/5">
-              <svg className="w-12 h-12 mx-auto text-text-dim mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              <p className="text-text-muted text-sm">
-                Le foto verranno aggiunte a breve. 
-                {activeCategory === "Tutte" ? "" : ` Seleziona "${activeCategory}" per vedere i placeholder.`}
-              </p>
-            </div>
-          </ScrollReveal>
+          {Object.keys(brokenImages).length > 0 && (
+            <ScrollReveal delay={200}>
+              <div className="text-center mt-12 p-6 rounded-lg bg-surface border border-white/5 max-w-xl mx-auto">
+                <p className="text-text-muted text-xs leading-relaxed">
+                  💡 <strong>Nota per l'amministratore:</strong> Carica le tue foto JPEG nella cartella del progetto: 
+                  <code className="block mt-2 p-2 bg-black/40 rounded text-gold text-[11px] overflow-x-auto">
+                    public/images/gallery/
+                  </code>
+                  Assicurati di nominarle esattamente come indicato sopra (es. <code className="text-white">piatto1.jpg</code>, <code className="text-white">locale1.jpg</code>, ecc.).
+                </p>
+              </div>
+            </ScrollReveal>
+          )}
         </div>
       </section>
 
       {/* Lightbox */}
-      {selectedImage !== null && (
+      {selectedImage && (
         <div
-          className="fixed inset-0 z-60 bg-black/95 flex items-center justify-center p-4 cursor-pointer"
+          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4 cursor-pointer"
           onClick={() => setSelectedImage(null)}
         >
           <button
@@ -129,16 +158,16 @@ export default function GalleriaPage() {
             </svg>
           </button>
           <div
-            className="max-w-4xl w-full aspect-[4/3] bg-surface rounded-lg flex items-center justify-center"
+            className="relative max-w-4xl max-h-[85vh] w-full aspect-[4/3] rounded-lg overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="text-center p-8">
-              <div className="w-24 h-24 mx-auto rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                <svg className="w-12 h-12 text-primary/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <p className="text-text-muted">Foto in arrivo</p>
+            <img
+              src={selectedImage.src}
+              alt={selectedImage.label}
+              className="w-full h-full object-contain"
+            />
+            <div className="absolute bottom-0 left-0 right-0 p-4 bg-black/60 text-center">
+              <p className="text-white text-sm font-semibold">{selectedImage.label}</p>
             </div>
           </div>
         </div>

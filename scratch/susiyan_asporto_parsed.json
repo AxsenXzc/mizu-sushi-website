@@ -1,0 +1,1052 @@
+[
+  {
+    "name": "Antipasti",
+    "items": [
+      {
+        "name": "3) PATATINE FRITTE",
+        "price": "€ 2,50",
+        "description": "Stick patate*"
+      },
+      {
+        "name": "14) PANE DOLCE CONIGLIO",
+        "price": "€ 3,50",
+        "description": "Farina, uova al vapore"
+      },
+      {
+        "name": "13) EDAMAME",
+        "price": "€ 4,00",
+        "description": "Fagiolini di soia e sale*"
+      },
+      {
+        "name": "12) WAKAME NERO",
+        "price": "€ 4,00",
+        "description": "Insalata di alghe e sesamo"
+      },
+      {
+        "name": "10) GOMA WAKAME",
+        "price": "€ 5,00",
+        "description": "Insalata di alghe piccante*"
+      }
+    ]
+  },
+  {
+    "name": "Zuppe & Insalate",
+    "items": [
+      {
+        "name": "18) INSALATA GRANCHIO",
+        "price": "€ 5,00",
+        "description": "Insalata polpa di surimi, sesamo e salsa*"
+      },
+      {
+        "name": "17) INSALATA MAIS",
+        "price": "€ 5,00",
+        "description": "Insalata mais, sesamo e salsa"
+      },
+      {
+        "name": "16) INSALATA ALGHE",
+        "price": "€ 5,00",
+        "description": "Insalata mista con alghe, sesamo e salsa"
+      },
+      {
+        "name": "15) INSALATA GOMA WAKAME",
+        "price": "€ 5,00",
+        "description": "Insalata mista con goma wakame*, sesamo e salsa"
+      },
+      {
+        "name": "20) INSALATA DI POLIPO",
+        "price": "€ 7,00",
+        "description": "E rucola"
+      },
+      {
+        "name": "24) ZUPPA DI MAIS",
+        "price": "€ 4,00",
+        "description": "Zuppa con mais e uova"
+      },
+      {
+        "name": "22) ZUPPA AGROPICCANTE",
+        "price": "€ 4,00",
+        "description": "Zuppa con uova, toufu, verdure miste e pollo"
+      }
+    ]
+  },
+  {
+    "name": "Tartare & Carpaccio",
+    "items": [
+      {
+        "name": "50) CARPACCIO MAGURO",
+        "price": "€ 12,00",
+        "description": "Tonno, salsa di sesamo e wasabi"
+      },
+      {
+        "name": "51) CARPACCIO SUZUKI",
+        "price": "€ 10,00",
+        "description": "Branzino, salsa di sesamo e wasabi"
+      },
+      {
+        "name": "52) CARPACCIO DI POLIPO",
+        "price": "€ 11,00",
+        "description": "Polipo, salsa di sesamo e wasabi"
+      },
+      {
+        "name": "49) CARPACCIO SAKE",
+        "price": "€ 9,00",
+        "description": "Salmone, salsa di sesamo e wasabi"
+      },
+      {
+        "name": "48) CARPACCIO MISTO",
+        "price": "€ 12,00",
+        "description": "Salmone, tonno, branzino, salsa di sesamo e wasabi"
+      }
+    ]
+  },
+  {
+    "name": "Sashimi & Chirashi",
+    "items": [
+      {
+        "name": "INSALATA SASHIMI",
+        "price": "",
+        "description": "Insalata con fette di branzino, gamberi, salmone, sesamo e"
+      },
+      {
+        "name": "45) SASHIMI SAKE",
+        "price": "€ 8,00",
+        "description": "Salmone"
+      },
+      {
+        "name": "46) SASHIMI MAGURO",
+        "price": "€ 9,00",
+        "description": "Tonno"
+      },
+      {
+        "name": "47) SASHIMI SUZUKI",
+        "price": "€ 8,00",
+        "description": "Branzino"
+      },
+      {
+        "name": "SUSHI SASHIMI MIX",
+        "price": "",
+        "description": "4 uramaki, 4 hossomaki, 4 nigiri, 6 sashimi mix,"
+      },
+      {
+        "name": "100) CHIRASHI MISTO",
+        "price": "€ 12,00",
+        "description": "Riso con pesce misto e sesamo"
+      },
+      {
+        "name": "101) CHIRASHI SAKE",
+        "price": "€ 11,00",
+        "description": "Riso con salmone e sesamo"
+      },
+      {
+        "name": "102) CHIRASHI TUNA",
+        "price": "€ 12,50",
+        "description": "Riso con tonno e sesamo"
+      }
+    ]
+  },
+  {
+    "name": "Uramaki",
+    "items": [
+      {
+        "name": "130) URA VEGETARIANO",
+        "price": "€ 8,00",
+        "description": "Avocado, cetrioli e insalata"
+      },
+      {
+        "name": "131) URA SPICY SALMON",
+        "price": "€ 9,00",
+        "description": "Salmone, avocado e salsa piccante"
+      },
+      {
+        "name": "133) URA MAGURO",
+        "price": "€ 10,00",
+        "description": "Tonno e avocado"
+      },
+      {
+        "name": "132) URA SPICY TUNA",
+        "price": "€ 10,00",
+        "description": "Tonno, avocado e salsa piccante"
+      },
+      {
+        "name": "127) URA CALIFORNIA",
+        "price": "€ 8,00",
+        "description": "Surimi, avocado e maionese*"
+      },
+      {
+        "name": "126) URA MIURA",
+        "price": "€ 10,00",
+        "description": "Salmone cotto, insalata, philadelphia e salsa teriyaki"
+      },
+      {
+        "name": "129) URA PHILADELPHIA",
+        "price": "€ 8,00",
+        "description": "Philadelphia, gamberi cotti e avocado*"
+      },
+      {
+        "name": "128) URA SAKE",
+        "price": "€ 8,00",
+        "description": "Salmone, avocado e philadelphia"
+      },
+      {
+        "name": "134) URA EBITEN",
+        "price": "€ 10,00",
+        "description": "Gamberi fritti, insalata, maionese, kataifi e salsa teriyaki*"
+      },
+      {
+        "name": "136) URA BRANZINO FRITTO",
+        "price": "€ 10,00",
+        "description": "Branzino fritto, philadelphia, avocado, salsa teriyaki e cipolla fritto"
+      },
+      {
+        "name": "135) URA SALMONE FRITTO",
+        "price": "€ 10,00",
+        "description": "Salmone fritto, philadelphia kataifi e salsa teriyaki"
+      },
+      {
+        "name": "137) URA POLLO FRITTO",
+        "price": "€ 10,00",
+        "description": "Pollo fritto, maionese, insalata e salsa teriyaki*"
+      },
+      {
+        "name": "138) URA KASAI",
+        "price": "€ 8,00",
+        "description": "Salmone, philadelphia, granulato tempura, salsa teriyaki"
+      },
+      {
+        "name": "143) URA LIME",
+        "price": "€ 14,00",
+        "description": "Salmone fritto, philadelphia, esterrno salmone, salsa lime, granulato tempura"
+      },
+      {
+        "name": "141) URA ARCOBALENO",
+        "price": "€ 13,00",
+        "description": "Surimi, avocado, maionese, esterno pesce misto e salsa teriyaki*"
+      },
+      {
+        "name": "144) URA SMOKED",
+        "price": "€ 13,00",
+        "description": "Gambero fritto, esterno salmone afumicato, salsa, rucola, kataifii"
+      },
+      {
+        "name": "145) URA FELICIT",
+        "price": "€ 15,00",
+        "description": "Salmone, avocado, philadelphia, maionase, salsa piccante, teriyaki"
+      },
+      {
+        "name": "151) URA VENERE CALIFORNIA",
+        "price": "",
+        "description": ""
+      },
+      {
+        "name": "153) URA PINK FRITTO",
+        "price": "€ 13,00",
+        "description": "Riso rosa, verdure fritte, sesamo, esterno salsa teriyaki"
+      },
+      {
+        "name": "154) URA PINK MANGO",
+        "price": "€ 13,00",
+        "description": "Riso rosa, mango, salmone, piladelphia, esterno salsa mango"
+      },
+      {
+        "name": "152) URA PINK SAKE",
+        "price": "€ 13,00",
+        "description": "Riso rosa, salmone, avocado, philadelphia esterno salsa sanshi speciale,"
+      },
+      {
+        "name": "206) TEMPURA YASAI",
+        "price": "€ 8,00",
+        "description": "Verdure miste fritte"
+      },
+      {
+        "name": "205) TEMPURA EBI",
+        "price": "€ 10,00",
+        "description": "Gamberi fritti*"
+      },
+      {
+        "name": "207) TEMPURA MISTO",
+        "price": "€ 9,00",
+        "description": "Gamberi e verdure fritte*"
+      },
+      {
+        "name": "208) TEMPURA POLLO",
+        "price": "€ 8,00",
+        "description": "Pollo fritto*"
+      }
+    ]
+  },
+  {
+    "name": "Uramaki Speciali",
+    "items": [
+      {
+        "name": "139) URA PISTACCHIO",
+        "price": "€ 14,00",
+        "description": "Gamberi fritti, maionase, pistacchio, salsa teriyaki"
+      },
+      {
+        "name": "140) URA TIGER",
+        "price": "€ 13,00",
+        "description": "Gamberi fritti e maionese esterno salmone, salsa teriyaki e kataifi*"
+      },
+      {
+        "name": "URA SUPER",
+        "price": "",
+        "description": "Salmone, avocado, philadelphia esterno avocado, tonno crudo,"
+      },
+      {
+        "name": "149) URA BLACK SAKE",
+        "price": "€ 12,00",
+        "description": "Riso venere, salmone, avocado e philadelphia"
+      },
+      {
+        "name": "URA BLACK TIGER",
+        "price": "",
+        "description": "Riso venere, gamberi fritti, insalata, philadelphia, esterno"
+      },
+      {
+        "name": "URA BLACK MIURA",
+        "price": "",
+        "description": "Riso venere, salmone cotto, insalata, philadelphia, esterno"
+      },
+      {
+        "name": "148) URA BLACK AVOCADO",
+        "price": "€ 12,00",
+        "description": "Riso venere, philadelphia, avocado, esterno madorle"
+      },
+      {
+        "name": "150) URA BLACK VEGETARIANO",
+        "price": "€ 10,00",
+        "description": "Riso venere, avocado, cetrioli e insalata"
+      }
+    ]
+  },
+  {
+    "name": "Hosomaki",
+    "items": [
+      {
+        "name": "116) HOSSO AVOCADO",
+        "price": "€ 6,00",
+        "description": "Avocado"
+      },
+      {
+        "name": "111) HOSSO KAPPA",
+        "price": "€ 5,00",
+        "description": "Cetrioli"
+      },
+      {
+        "name": "113) HOSSO TAKUAN",
+        "price": "€ 6,00",
+        "description": "Rapa gialla"
+      },
+      {
+        "name": "115) HOSSO EBI",
+        "price": "€ 6,00",
+        "description": "Gamberi cotti*"
+      },
+      {
+        "name": "110) HOSSO SAKE",
+        "price": "€ 6,00",
+        "description": "Salmone"
+      },
+      {
+        "name": "114) HOSSO MAGURO",
+        "price": "€ 7,00",
+        "description": "Tonno"
+      },
+      {
+        "name": "112) HOSSO SURIMI",
+        "price": "€ 5,00",
+        "description": "Surimi*"
+      },
+      {
+        "name": "117) HOSSO FRITTO CON FRAGOLA",
+        "price": "€ 8,00",
+        "description": "Salmone, philadelphia e fragola"
+      },
+      {
+        "name": "118) HOSSO FRITTO CON MANGO",
+        "price": "€ 8,00",
+        "description": "Salmone, philadelphia e mango"
+      },
+      {
+        "name": "119) HOSSO FRITTO",
+        "price": "€ 7,00",
+        "description": "Salmone, philadelphia e salsa teriyaki"
+      },
+      {
+        "name": "120) HOSSO SOY MANGO",
+        "price": "€ 8,00",
+        "description": "Foglio di soia, mango"
+      },
+      {
+        "name": "121) HOSSO SOY AVOCADO",
+        "price": "€ 8,00",
+        "description": "Foglio di soia, avocado"
+      },
+      {
+        "name": "124) HOSSO SOY SURIMI",
+        "price": "€ 9,00",
+        "description": "Foglia di soia, surimi, gambero cotto e maionese"
+      },
+      {
+        "name": "125) HOSSO SOY BLACK SURIMI",
+        "price": "€ 9,00",
+        "description": "Foglia di soia, riso venere, surimi e gambero cotto"
+      },
+      {
+        "name": "122) HOSSO SOY SAKE",
+        "price": "€ 8,00",
+        "description": "Foglia di soia, salmone"
+      },
+      {
+        "name": "123) HOSSO SOY MAGURO",
+        "price": "€ 8,00",
+        "description": "Foglia di soia, tonno"
+      }
+    ]
+  },
+  {
+    "name": "Futomaki & Temaki",
+    "items": [
+      {
+        "name": "91) TEMAKI SOIA GAMBERO",
+        "price": "€ 5,00",
+        "description": "Foglio di soia, gambero cotto, avocado, maionase"
+      },
+      {
+        "name": "TEMAKI BLACK SAKE",
+        "price": "",
+        "description": "Foglio di soia, riso venere, avocado, salmone e"
+      },
+      {
+        "name": "89) TEMAKI BLACK MAGURO",
+        "price": "€ 5,50",
+        "description": "Foglio di soia, riso venere, avocado, tonno"
+      },
+      {
+        "name": "90) TEMAKI SOIA VEGETARIANO",
+        "price": "€ 5,00",
+        "description": "Foglio di soia, cetrioli, insalata, avocado"
+      },
+      {
+        "name": "86) TEMAKI SOIA EBI",
+        "price": "€ 5,00",
+        "description": "Foglio di soia, avocado, gambero cotto"
+      },
+      {
+        "name": "84) TEMAKI SOIA SAKE",
+        "price": "€ 5,00",
+        "description": "Foglio di soia, avocado, salmone e philadelphia"
+      },
+      {
+        "name": "85) TEMAKI SOIA MAGURO",
+        "price": "€ 5,00",
+        "description": "Foglio di soia, avocado, tonno"
+      },
+      {
+        "name": "87) TEMAKI SOIA YASAI",
+        "price": "€ 5,00",
+        "description": "Foglio di soia, avocado, cetrioli, insalata"
+      },
+      {
+        "name": "99) TEMAKI CALIFORNIA",
+        "price": "€ 4,00",
+        "description": "Surimi, gambero cotto e avocado*"
+      },
+      {
+        "name": "95) TEMAKI VEGETARIANO",
+        "price": "€ 4,00",
+        "description": "Avocado, cetrioli, insalata"
+      },
+      {
+        "name": "94) TEMAKI EBI",
+        "price": "€ 4,00",
+        "description": "Gambero cotto e avocado*"
+      },
+      {
+        "name": "92) TEMAKI SAKE",
+        "price": "€ 4,00",
+        "description": "Salmone crudo, avocado e philadelphia"
+      },
+      {
+        "name": "93) TEMAKI TEKKA",
+        "price": "€ 5,00",
+        "description": "Tonno crudo e avocado"
+      },
+      {
+        "name": "96) TEMAKI EBI FRITTO",
+        "price": "€ 5,00",
+        "description": "Gambero fritto, insalata, maionese e salsa teriyaki*"
+      },
+      {
+        "name": "97) TEMAKI SPICY SALMON",
+        "price": "€ 4,00",
+        "description": "Salmone e salsa piccante"
+      },
+      {
+        "name": "98) TEMAKI SPICY TUNA",
+        "price": "€ 4,50",
+        "description": "Tonno e salsa piccante"
+      },
+      {
+        "name": "105) FUTO VEGETARIANO",
+        "price": "€ 6,00",
+        "description": "Insalata, cetrioli, avocado"
+      },
+      {
+        "name": "106) FUTO FRITTO",
+        "price": "€ 9,00",
+        "description": "Salmone, avocado, philadelphia, kataifi e salsa teriyaki"
+      },
+      {
+        "name": "104) FUTO PHILADELPHIA",
+        "price": "€ 7,00",
+        "description": "Salmone, philadelphia, avocado e salsa teriyaki"
+      },
+      {
+        "name": "103) FUTO CALIFORNIA",
+        "price": "€ 7,00",
+        "description": "Surimi, avocado e maionese*"
+      },
+      {
+        "name": "107) FUTO SOY PHILADELPHIA",
+        "price": "€ 8,00",
+        "description": "Foglia di soia, salmone, philadelphia e avocado"
+      },
+      {
+        "name": "109) FUTO SOY VEGETARIANO",
+        "price": "€ 7,00",
+        "description": "Foglia di soia, insalata, cetrioli, avocado"
+      },
+      {
+        "name": "FUTO SOY KATAIFI",
+        "price": "",
+        "description": "Foglia di soia, salmone, avocado, philadelphia, esterno kataifi e"
+      }
+    ]
+  },
+  {
+    "name": "Gunkan",
+    "items": [
+      {
+        "name": "75) GUNKAN IKURA",
+        "price": "€ 5,00",
+        "description": "Uova di salmone e alghe esterno*"
+      },
+      {
+        "name": "70) GUNKAN TOBIKO",
+        "price": "€ 5,00",
+        "description": "Uova di pesce volante e alghe esterno*"
+      },
+      {
+        "name": "74) GUNKAN WAKAME",
+        "price": "€ 3,00",
+        "description": "Alghe giapponese con alghe esterno*"
+      },
+      {
+        "name": "73) GUNKAN SURIMI",
+        "price": "€ 3,50",
+        "description": "Surimi, gamberi cotti, maionese, alghe esterno*"
+      },
+      {
+        "name": "71) GUNKAN SPICY SALMON",
+        "price": "€ 4,00",
+        "description": "Salmone piccante e alghe esterno"
+      },
+      {
+        "name": "72) GUNKAN SPICY TUNA",
+        "price": "€ 4,00",
+        "description": "Tonno piccante e alghe esterno"
+      },
+      {
+        "name": "81) GUNKAN FRASH",
+        "price": "€ 4,50",
+        "description": "Philadelphia, esterno salmone"
+      },
+      {
+        "name": "76) GUNKAN KATAIFI",
+        "price": "€ 5,00",
+        "description": "Philadelphia, esterno salmone scottato e kataifi"
+      },
+      {
+        "name": "79) GUNKAN SPICY ZUCCHINE",
+        "price": "€ 4,50",
+        "description": "Salmone piccante, maionese, zucchine esterno e salsa gamberi"
+      },
+      {
+        "name": "80) GUNKAN ZUCCHINE",
+        "price": "€ 4,50",
+        "description": "Surimi, gamberi cotti, maionese e zucchine esterno*"
+      },
+      {
+        "name": "GUNKAN SCOTTATO SURIMI",
+        "price": "",
+        "description": "Surimi, gamberi cotti, maionese, esterno salmone scottato"
+      },
+      {
+        "name": "78) GUNKAN MAIS",
+        "price": "€ 4,50",
+        "description": "Mais, esterno salmone"
+      },
+      {
+        "name": "83) GUNKAN SPICY MAGURO",
+        "price": "€ 5,00",
+        "description": "Tonno esterno con salsa piccante"
+      },
+      {
+        "name": "82) GUNKAN SPICY SAKE",
+        "price": "€ 5,00",
+        "description": "Salmone esterno con salsa piccante"
+      }
+    ]
+  },
+  {
+    "name": "Primi Piatti (Spaghetti & Riso)",
+    "items": [
+      {
+        "name": "155) UDON CON GAMBERI",
+        "price": "€ 9,00",
+        "description": "Gamberi, verdure miste*"
+      },
+      {
+        "name": "156) UDON CON POLLO",
+        "price": "€ 8,00",
+        "description": "Pollo, verdure miste*"
+      },
+      {
+        "name": "157) UDON CON MANZO",
+        "price": "€ 8,00",
+        "description": "Manzo, verdure miste*"
+      },
+      {
+        "name": "158) UDON CON VERDURE",
+        "price": "€ 6,00",
+        "description": "Verdure miste"
+      },
+      {
+        "name": "166) GNOCCHI DI RISO",
+        "price": "€ 6,00",
+        "description": "Con verdure"
+      },
+      {
+        "name": "164) SPAGHETTI DI SOIA",
+        "price": "€ 6,00",
+        "description": "Con verdure miste verdure miste"
+      },
+      {
+        "name": "SPAGHETTI DI SOIA",
+        "price": "€ 8,00",
+        "description": "Con gamberi gamberi e verdure miste*"
+      },
+      {
+        "name": "162) SPAGHETTI DI RISO CON GAMBERI",
+        "price": "€ 8,00",
+        "description": "Gamberi, verdure miste e uova*"
+      },
+      {
+        "name": "165) SPAGHETTI DI RISO",
+        "price": "€ 6,00",
+        "description": "Con verdure miste verdure miste e uova"
+      },
+      {
+        "name": "SPAGHETTI DI SOIA",
+        "price": "",
+        "description": "Con carne piccante carne di maiale macinato e"
+      },
+      {
+        "name": "172) RISO SALTATO",
+        "price": "€ 6,00",
+        "description": "Con verdure miste verdure miste e uova"
+      },
+      {
+        "name": "173) RISO SALTATO CON",
+        "price": "€ 8,00",
+        "description": "Gamberi verdure miste, gamberi e uova*"
+      },
+      {
+        "name": "174) RISO SALTATO CON",
+        "price": "€ 7,00",
+        "description": "Manzo manzo, verdure miste e uova*"
+      },
+      {
+        "name": "177) RISO VENERE SALTATO",
+        "price": "€ 8,00",
+        "description": "Con verdure e gamberi"
+      },
+      {
+        "name": "176) RISO ALLA CANTONESE",
+        "price": "€ 6,00",
+        "description": "Piselli, prosciutto cotto e uova*"
+      },
+      {
+        "name": "175) RISO SALTATO CON POLLO",
+        "price": "€ 7,00",
+        "description": "Pollo, verdure miste e uova*"
+      }
+    ]
+  },
+  {
+    "name": "Secondi (Pollo, Maiale, Vitello, Gamberi)",
+    "items": [
+      {
+        "name": "179) POLLO CON SALSA PICCANTE",
+        "price": "€ 6,00",
+        "description": "Pollo, peperoni, cipolla e salsa piccante*"
+      },
+      {
+        "name": "180) POLLO AL LIMONE",
+        "price": "€ 6,00",
+        "description": "Pollo fritto con salsa di limone e sesamo*"
+      },
+      {
+        "name": "181) POLLO CON FUNGHI",
+        "price": "€ 6,00",
+        "description": "E bambu'*"
+      },
+      {
+        "name": "178) POLLO ALLE MANDORLE",
+        "price": "€ 6,00",
+        "description": "Pollo, mandorle, peperoni e cipolla*"
+      },
+      {
+        "name": "182) POLLO CON",
+        "price": "€ 6,00",
+        "description": "Verdure*"
+      },
+      {
+        "name": "184) POLLO AGRODOLCE",
+        "price": "€ 6,00",
+        "description": "Pollo, verdure e ananas*"
+      },
+      {
+        "name": "183) POLLO AL CURRY",
+        "price": "€ 6,00",
+        "description": "Pollo, curry e verdure mix*"
+      },
+      {
+        "name": "GAMBERI CON SALSA",
+        "price": "",
+        "description": "Piccante gamberi, peperoni, cipolla"
+      },
+      {
+        "name": "196) GAMBERI SALE E PEPE",
+        "price": "€ 8,00",
+        "description": "Gamberi, peperoni, cipolla, sale e pepe*"
+      },
+      {
+        "name": "197) GAMBERI AL CURRY",
+        "price": "€ 8,00",
+        "description": "Gamberi, cipolla, latte al cocco e salsa al curry*"
+      },
+      {
+        "name": "193) GAMBERI SALTATO",
+        "price": "€ 8,00",
+        "description": "Con verdure*"
+      },
+      {
+        "name": "194) GAMBERI CON BAMBÙ",
+        "price": "€ 8,00",
+        "description": "E funghi*"
+      },
+      {
+        "name": "203) SPIEDINI DI POLLO",
+        "price": "€ 6,00",
+        "description": "Spiedini di pollo marinato* salsa teriyaki"
+      },
+      {
+        "name": "11) COCKTAIL DI GAMBERI",
+        "price": "€ 7,00",
+        "description": "Gamberetti con salsa rosa*"
+      }
+    ]
+  },
+  {
+    "name": "Tempura & Griglia",
+    "items": [
+      {
+        "name": "199) VERDURE ALLA GRIGLIA",
+        "price": "€ 5,00",
+        "description": "Peperoni, zucchine"
+      },
+      {
+        "name": "204) CALAMARI ALLA GRIGLIA",
+        "price": "€ 8,00",
+        "description": "Calamari, salsa teriyaki"
+      }
+    ]
+  },
+  {
+    "name": "Altro",
+    "items": [
+      {
+        "name": "160) YAKI SOBA MANZO",
+        "price": "€ 8,00",
+        "description": "Spaghetti di verdure e manzo"
+      },
+      {
+        "name": "159) YAKI SOBA EBI",
+        "price": "€ 8,00",
+        "description": "Spaghetti di verdure e gamberi*"
+      },
+      {
+        "name": "167) RAMEN IN BRODO",
+        "price": "€ 8,00",
+        "description": "Con gamberi e uova gamberi, verdure miste e uova*"
+      },
+      {
+        "name": "170) RAMEN IN BRODO",
+        "price": "€ 6,00",
+        "description": "Con verdure e uova verdure miste e uova"
+      },
+      {
+        "name": "169) RAMEN IN BRODO",
+        "price": "€ 8,00",
+        "description": "Con manzo e uova manzo, verdure miste e uova*"
+      },
+      {
+        "name": "168) RAMEN IN BRODO",
+        "price": "€ 8,00",
+        "description": "Con pollo e uova pollo, verdure miste e uova*"
+      },
+      {
+        "name": "171) GOHAN",
+        "price": "€ 2,50",
+        "description": "Riso bianco con sesamo"
+      },
+      {
+        "name": "185) GERMOGLI DI SOIA",
+        "price": "€ 4,00",
+        "description": ""
+      },
+      {
+        "name": "186) VERDURE MIX",
+        "price": "€ 5,00",
+        "description": ""
+      },
+      {
+        "name": "187) FUNGHI E BAMBU'",
+        "price": "€ 5,00",
+        "description": ""
+      },
+      {
+        "name": "188) MANZO CON PATATE*",
+        "price": "€ 6,50",
+        "description": ""
+      },
+      {
+        "name": "189) MANZO CON VERDURE MIX*",
+        "price": "€ 6,50",
+        "description": ""
+      },
+      {
+        "name": "191) MANZO CON FUNGHI",
+        "price": "€ 6,50",
+        "description": "E bambù*"
+      },
+      {
+        "name": "192) MANZO AL CURRY",
+        "price": "€ 6,50",
+        "description": "Manzo, patate, cipolla, latte al cocco e salsa al curry*"
+      },
+      {
+        "name": "MANZO CON SALSA PICCANTE",
+        "price": "€ 6,50",
+        "description": ""
+      },
+      {
+        "name": "198) GAMBERONI*",
+        "price": "€ 9,00",
+        "description": ""
+      },
+      {
+        "name": "202) YAKI EBI",
+        "price": "€ 6,00",
+        "description": "Spiedini di gamberi*, salsa teriyaki"
+      },
+      {
+        "name": "200) TERIYAKI MAGURO TEPPAN",
+        "price": "€ 11,00",
+        "description": "Tonno con salsa teriyaki*"
+      },
+      {
+        "name": "201) TERIYAKI SUZUKI TEPPAN",
+        "price": "€ 9,00",
+        "description": "Branzino con salsa teriyaki*"
+      },
+      {
+        "name": "209) IKA FRY",
+        "price": "€ 10,00",
+        "description": "Calamari fritti*"
+      },
+      {
+        "name": "GELATO FRITTO 4,50",
+        "price": "",
+        "description": "Tartufo bianco 4,50 tartufo nero 4,50"
+      },
+      {
+        "name": "TARTUFO AL CAFFE' 4,50",
+        "price": "",
+        "description": "Uramaki fritto - 8pz uramaki speciale - 8pz"
+      },
+      {
+        "name": "COPPA AL COCCO 5,00",
+        "price": "",
+        "description": "Profiterol nero 3 pz 5,00 cheese cake 5,50"
+      },
+      {
+        "name": "TARTUFO AL PISTACCHIO 5,50",
+        "price": "",
+        "description": "Tiramisu 4,50 tortino al cioccolato 4,50"
+      },
+      {
+        "name": "GELATO 3,50",
+        "price": "",
+        "description": "Mizu asian restaurant menu asporto"
+      },
+      {
+        "name": "5 PIATTI 22,00 €",
+        "price": "",
+        "description": "Presso il nuovo centro commerciale altanon"
+      },
+      {
+        "name": "65) NIGIRI AMAEBI",
+        "price": "€ 4,00",
+        "description": "Gamberi crudi*"
+      },
+      {
+        "name": "64) NIGIRI SUZUKI",
+        "price": "€ 3,00",
+        "description": "Branzino"
+      },
+      {
+        "name": "66) NIGIRI TAKO",
+        "price": "€ 3,00",
+        "description": "Polipo*"
+      },
+      {
+        "name": "63) NIGIRI AVOCADO",
+        "price": "€ 3,50",
+        "description": "Avocado"
+      },
+      {
+        "name": "21) MISOSHIRO",
+        "price": "€ 3,00",
+        "description": "Zuppa di miso (tofu, alghe giapponese, erba cippolina)"
+      },
+      {
+        "name": "23) FRUTTI DI MARE",
+        "price": "€ 4,00",
+        "description": "Zuppa con surimi, gamberi, uova*"
+      },
+      {
+        "name": "30) TARTAR SUZUKI",
+        "price": "€ 8,00",
+        "description": "Branzino tritato con salsa di sesamo"
+      },
+      {
+        "name": "31) TARTAR TUNA",
+        "price": "€ 6,00",
+        "description": "Tonno tritato con salsa di sesamo"
+      },
+      {
+        "name": "29) TARTAR SAKE",
+        "price": "€ 8,00",
+        "description": "Salmone tritato con salsa di sesamo"
+      },
+      {
+        "name": "32) TARTAR SPECIALE SALMONE",
+        "price": "€ 14,00",
+        "description": "Salmone tritato, avocado, uova di pesce volante, salsa di sesamo, riso bianco"
+      },
+      {
+        "name": "41) DUTOU FLAMBE' PURE",
+        "price": "€ 8,00",
+        "description": "Salmone scottato, purè di patate"
+      },
+      {
+        "name": "42) DUTOU FLAMBE' EBI",
+        "price": "€ 8,00",
+        "description": "Salmone scottato, tempura di gamberi*, salsa teriyaki"
+      },
+      {
+        "name": "DUTOU SAKE SCOTTATO",
+        "price": "",
+        "description": "Involtino di salmone scottato con insalata, cetriolo, salsa"
+      },
+      {
+        "name": "39) DUTOU SAKE",
+        "price": "€ 4,00",
+        "description": "Involtino di salmone con cetriolo, salsa di sesamo e wasabi"
+      },
+      {
+        "name": "38) TATAKI MAGURO",
+        "price": "€ 12,00",
+        "description": "Tonno scottato con sesamo e salsa teriyaki"
+      },
+      {
+        "name": "37) TATAKI SAKE",
+        "price": "€ 11,00",
+        "description": "Salmone scottato con sesamo e salsa teriyaki"
+      },
+      {
+        "name": "53) SUSHII MIX",
+        "price": "€ 15,00",
+        "description": "4 hossomaki, 4 uramaki, 4 nigiri"
+      },
+      {
+        "name": "60) NIGIRI BLACK SUZUKI",
+        "price": "€ 3,50",
+        "description": "Branzino"
+      },
+      {
+        "name": "59) NIGIRI BLACK MAGURO",
+        "price": "€ 6,00",
+        "description": "Tonno"
+      },
+      {
+        "name": "58) NIGIRI BLACK SAKE",
+        "price": "€ 3,50",
+        "description": "Salmone"
+      },
+      {
+        "name": "57) NIGIRI BLACK KIRO",
+        "price": "€ 4,50",
+        "description": "Salmone scottato, philadelphia e kataifi"
+      },
+      {
+        "name": "55) NIGIRI MIX",
+        "price": "€ 9,00",
+        "description": "6 pz misto dello chef"
+      },
+      {
+        "name": "56) NIGIRI SAKE KIRO",
+        "price": "€ 4,00",
+        "description": "Salmone scottato, salsa teriyaki e sesamo, salsa piccante"
+      },
+      {
+        "name": "69) NIGIRI EBI",
+        "price": "€ 3,00",
+        "description": "Gambero cotto*"
+      },
+      {
+        "name": "67) NIGIRI SAKE",
+        "price": "€ 3,00",
+        "description": "Salmone"
+      },
+      {
+        "name": "NIGIRI MAGURO",
+        "price": "€ 3,50",
+        "description": "Tonno"
+      },
+      {
+        "name": "62) NIGIRI SURIMI",
+        "price": "€ 2,50",
+        "description": "Polpa di granchio*"
+      },
+      {
+        "name": "68) NIGIRI ANGUILLA",
+        "price": "€ 4,00",
+        "description": "Anguilla* e sesamo"
+      }
+    ]
+  }
+]

@@ -1,9 +1,10 @@
 import Link from "next/link";
-import { restaurants, menuCategories, reviews } from "@/lib/data";
+import { restaurants, reviews } from "@/lib/data";
 import ScrollReveal from "@/components/ScrollReveal";
 import LocationCard from "@/components/LocationCard";
 import ReviewCarousel from "@/components/ReviewCarousel";
 import SectionTitle from "@/components/SectionTitle";
+import FullMenuSection from "@/components/FullMenuSection";
 
 export default function HomePage() {
   return (
@@ -71,67 +72,21 @@ export default function HomePage() {
           <ScrollReveal>
             <SectionTitle
               title="I Nostri Ristoranti"
-              subtitle="Tre location per vivere l'esperienza Mizu Sushi e i suoi affiliati."
+              subtitle="Scopri le nostre sedi a Feltre e Belluno."
             />
           </ScrollReveal>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {restaurants.map((r, i) => (
-              <ScrollReveal key={r.id} delay={i * 150}>
-                <LocationCard {...r} />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {restaurants.map((restaurant, idx) => (
+              <ScrollReveal key={restaurant.id} delay={idx * 100}>
+                <LocationCard {...restaurant} />
               </ScrollReveal>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Anteprima Menu */}
-      <section className="py-24 px-4 bg-[#0d0d0d]">
-        <div className="max-w-7xl mx-auto">
-          <ScrollReveal>
-            <SectionTitle
-              title="Dal Nostro Menu"
-              subtitle="Una selezione dei nostri piatti più amati."
-            />
-          </ScrollReveal>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {menuCategories
-              .flatMap((cat) => cat.items)
-              .slice(0, 6)
-              .map((item, i) => (
-                <ScrollReveal key={i} delay={i * 100}>
-                  <div className="group p-5 bg-surface rounded-lg border border-white/5 hover:border-primary/30 transition-all duration-300 hover:translate-y-[-2px]">
-                    <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-sm font-semibold text-white">
-                        {item.name}
-                      </h3>
-                      <span className="text-sm font-bold text-gold">
-                        {item.price}
-                      </span>
-                    </div>
-                    {item.description && (
-                      <p className="text-xs text-text-muted leading-relaxed">
-                        {item.description}
-                      </p>
-                    )}
-                  </div>
-                </ScrollReveal>
-              ))}
-          </div>
-          <ScrollReveal delay={200}>
-            <div className="text-center mt-10">
-              <Link
-                href="/menu"
-                className="inline-flex items-center gap-2 px-8 py-3 border border-white/20 hover:border-white/40 text-white text-sm tracking-widest uppercase rounded transition-all"
-              >
-                Menu Completo
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
+      {/* Menu Completo */}
+      <FullMenuSection />
 
       {/* Recensioni */}
       <section className="py-24 px-4">
@@ -167,7 +122,7 @@ export default function HomePage() {
           </ScrollReveal>
           <ScrollReveal delay={200}>
             <p className="text-lg text-text-muted mb-10 max-w-xl mx-auto">
-              Vieni a trovarci al Centro Commerciale Altanon di Feltre.
+              Vieni a trovarci nelle nostre sedi di Feltre e Belluno.
               Ti aspettiamo per un&apos;esperienza culinaria indimenticabile.
             </p>
           </ScrollReveal>
