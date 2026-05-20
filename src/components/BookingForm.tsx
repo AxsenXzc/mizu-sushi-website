@@ -77,6 +77,7 @@ export default function BookingForm() {
   const [form, setForm] = useState<FormData>(initialForm);
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const [timeError, setTimeError] = useState("");
   const [focusedField, setFocusedField] = useState<string | null>(null);
   const [step, setStep] = useState(1);
 
@@ -89,14 +90,55 @@ export default function BookingForm() {
     return `${year}-${month}-${day}`;
   };
 
+  const validateTime = (selectedOra = form.ora, selectedData = form.data) => {
+    if (!selectedOra || !selectedData) return true;
+    const [hours, minutes] = selectedOra.split(":").map(Number);
+    const timeInMinutes = hours * 60 + minutes;
+    
+    // Lunch: 11:00 - 15:00
+    const isLunch = timeInMinutes >= 11 * 60 && timeInMinutes <= 15 * 60;
+    // Dinner: 18:00 - 23:30
+    const isDinner = timeInMinutes >= 18 * 60 && timeInMinutes <= 23 * 60 + 30;
+    
+    if (!isLunch && !isDinner) {
+      setTimeError("Il ristorante è chiuso a quest'ora. Orari: 11:00–15:00 e 18:00–23:30");
+      return false;
+    }
+    
+    // Check if booking is in the past for today
+    const todayStr = getLocalDateString();
+    if (selectedData === todayStr) {
+      const now = new Date();
+      const currentMinutes = now.getHours() * 60 + now.getMinutes();
+      if (timeInMinutes < currentMinutes + 15) { // at least 15 min in advance
+        setTimeError("L'orario scelto è nel passato o troppo vicino a quello attuale.");
+        return false;
+      }
+    }
+    
+    setTimeError("");
+    return true;
+  };
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
   ) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setForm(prev => {
+      const updated = { ...prev, [name]: value };
+      if (name === "ora" || name === "data") {
+        validateTime(updated.ora, updated.data);
+      }
+      return updated;
+    });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!validateTime()) {
+      setStep(3); // Redirect to Date/Time step
+      return;
+    }
     setStatus("sending");
 
     const ristoranteScelto = restaurants.find(r => r.id === form.ristorante)?.name || form.ristorante;
@@ -196,36 +238,42 @@ export default function BookingForm() {
     );
   }
 
+  const steps = [
+    { id: 1, label: "Chi Sei", icon: "👤" },
+    { id: 2, label: "Dettagli", icon: "🍽️" },
+    { id: 3, label: "Orario", icon: "🕒" },
+    { id: 4, label: "Conferma", icon: "✓" }
+  ];
+
   return (
     <div className="animate-fade-in">
-      {/* Progress Steps */}
-      <div className="flex items-center justify-center gap-4 mb-10">
-        {[1, 2, 3].map((s) => (
-          <div key={s} className="flex items-center gap-4">
-            <div className="flex items-center gap-2">
-              <div
-                className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-500 ${step >= s
-                    ? "bg-primary text-white shadow-lg shadow-primary/20"
-                    : "bg-surface text-text-dim border border-white/10"
-                  }`}
-              >
-                {step > s ? (
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                  </svg>
-                ) : (
-                  s
-                )}
-              </div>
-              <span className={`text-xs tracking-widest uppercase hidden sm:block transition-colors ${step >= s ? "text-white" : "text-text-dim"}`}>
-                {s === 1 ? "Chi Sei" : s === 2 ? "Dettagli" : "Conferma"}
-              </span>
-            </div>
-            {s < 3 && (
-              <div className={`w-8 h-[2px] transition-colors duration-500 ${step > s ? "bg-primary" : "bg-white/10"}`} />
-            )}
-          </div>
-        ))}
+      {/* Dynamic Island Progress Indicator */}
+      <div className="flex justify-center mb-10">
+        <div className="bg-[#0a0a0a]/80 backdrop-blur-2xl border border-white/10 p-1.5 rounded-full flex items-center gap-1 shadow-[0_8px_32px_rgba(0,0,0,0.5)] transition-all duration-500 relative overflow-hidden">
+          {steps.map(s => (
+            <button 
+              key={s.id}
+              type="button"
+              onClick={() => {
+                if (s.id < step) setStep(s.id);
+              }}
+              className={`relative flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] ${
+                step === s.id 
+                  ? 'bg-primary/20 text-primary-light' 
+                  : step > s.id 
+                    ? 'text-white hover:bg-white/10 cursor-pointer' 
+                    : 'text-text-dim opacity-50 cursor-not-allowed'
+              }`}
+            >
+              <span className="text-sm">{s.icon}</span>
+              {step === s.id && (
+                <span className="text-xs font-bold tracking-widest uppercase whitespace-nowrap animate-fade-in-right pr-1">
+                  {s.label}
+                </span>
+              )}
+            </button>
+          ))}
+        </div>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-5">
@@ -294,7 +342,7 @@ export default function BookingForm() {
           </button>
         </div>
 
-        {/* Step 2: Dettagli */}
+        {/* Step 2: Dettagli Ristorante */}
         <div className={`space-y-5 transition-all duration-500 ${step === 2 ? "block" : "hidden"}`}>
           <FieldWrapper label="Ristorante" required index={0}>
             <select
@@ -337,41 +385,6 @@ export default function BookingForm() {
             </select>
           </FieldWrapper>
 
-          <div className="grid grid-cols-2 gap-4">
-            <FieldWrapper label="Data" required index={2}>
-              <input
-                type="date"
-                name="data"
-                required
-                value={form.data}
-                onChange={handleChange}
-                onFocus={() => setFocusedField("data")}
-                onBlur={() => setFocusedField(null)}
-                min={getLocalDateString()}
-                className={`w-full px-4 py-3.5 bg-surface/50 border rounded-lg text-white text-sm 
-                  focus:outline-none focus:ring-1 transition-all duration-300 [color-scheme:dark]
-                  hover:border-white/20
-                  ${focusedField === "data" ? "border-primary ring-primary/30 shadow-lg shadow-primary/5" : "border-white/10"}`}
-              />
-            </FieldWrapper>
-
-            <FieldWrapper label="Ora" required index={3}>
-              <input
-                type="time"
-                name="ora"
-                required
-                value={form.ora}
-                onChange={handleChange}
-                onFocus={() => setFocusedField("ora")}
-                onBlur={() => setFocusedField(null)}
-                className={`w-full px-4 py-3.5 bg-surface/50 border rounded-lg text-white text-sm 
-                  focus:outline-none focus:ring-1 transition-all duration-300 [color-scheme:dark]
-                  hover:border-white/20
-                  ${focusedField === "ora" ? "border-primary ring-primary/30 shadow-lg shadow-primary/5" : "border-white/10"}`}
-              />
-            </FieldWrapper>
-          </div>
-
           <div className="flex gap-3">
             <button
               type="button"
@@ -393,8 +406,76 @@ export default function BookingForm() {
           </div>
         </div>
 
-        {/* Step 3: Conferma */}
+        {/* Step 3: Data e Ora (Controllo Errori) */}
         <div className={`space-y-5 transition-all duration-500 ${step === 3 ? "block" : "hidden"}`}>
+          <div className="grid grid-cols-2 gap-4">
+            <FieldWrapper label="Data" required index={0}>
+              <input
+                type="date"
+                name="data"
+                required
+                value={form.data}
+                onChange={handleChange}
+                onFocus={() => setFocusedField("data")}
+                onBlur={() => setFocusedField(null)}
+                min={getLocalDateString()}
+                className={`w-full px-4 py-3.5 bg-surface/50 border rounded-lg text-white text-sm 
+                  focus:outline-none focus:ring-1 transition-all duration-300 [color-scheme:dark]
+                  hover:border-white/20
+                  ${focusedField === "data" ? "border-primary ring-primary/30 shadow-lg shadow-primary/5" : "border-white/10"}`}
+              />
+            </FieldWrapper>
+
+            <FieldWrapper label="Ora" required index={1}>
+              <input
+                type="time"
+                name="ora"
+                required
+                value={form.ora}
+                onChange={handleChange}
+                onFocus={() => setFocusedField("ora")}
+                onBlur={() => setFocusedField(null)}
+                className={`w-full px-4 py-3.5 bg-surface/50 border rounded-lg text-white text-sm 
+                  focus:outline-none focus:ring-1 transition-all duration-300 [color-scheme:dark]
+                  hover:border-white/20
+                  ${focusedField === "ora" ? "border-primary ring-primary/30 shadow-lg shadow-primary/5" : "border-white/10"}`}
+              />
+            </FieldWrapper>
+          </div>
+
+          {timeError && (
+            <p className="text-red-500 text-xs mt-1 animate-fade-in font-medium bg-red-950/20 border border-red-500/20 p-2.5 rounded-lg shadow-inner">
+              ⚠️ {timeError}
+            </p>
+          )}
+
+          <div className="flex gap-3">
+            <button
+              type="button"
+              onClick={() => { setTimeError(""); setStep(2); }}
+              className="flex-1 py-3.5 border border-white/10 hover:border-white/30 text-white text-sm tracking-widest uppercase rounded-lg transition-all duration-300"
+            >
+              Indietro
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                if (validateTime()) {
+                  setStep(4);
+                }
+              }}
+              className="flex-[2] py-3.5 bg-primary hover:bg-primary-light text-white text-sm tracking-widest uppercase rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 flex items-center justify-center gap-2 group"
+            >
+              Continua
+              <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        {/* Step 4: Conferma e Note */}
+        <div className={`space-y-5 transition-all duration-500 ${step === 4 ? "block" : "hidden"}`}>
           <FieldWrapper label="Note / Allergie" index={0}>
             <textarea
               name="note"
@@ -411,37 +492,33 @@ export default function BookingForm() {
             />
           </FieldWrapper>
 
-          <div className="p-5 rounded-lg bg-primary/5 border border-primary/20 space-y-2 animate-fade-in">
+          <div className="p-5 rounded-lg bg-primary/5 border border-primary/20 space-y-2 animate-fade-in shadow-inner">
             <p className="text-xs text-text-dim tracking-widest uppercase">Riepilogo</p>
-            <div className="grid grid-cols-2 gap-2 text-sm">
-              <div>
-                <span className="text-text-dim">Nome:</span>
-                <span className="text-white ml-2">{form.nome} {form.cognome}</span>
+            <div className="grid grid-cols-2 gap-3 text-sm">
+              <div className="flex flex-col">
+                <span className="text-text-dim text-xs">Nome</span>
+                <span className="text-white font-medium">{form.nome} {form.cognome}</span>
               </div>
-              <div>
-                <span className="text-text-dim">Telefono:</span>
-                <span className="text-white ml-2">{form.telefono}</span>
+              <div className="flex flex-col">
+                <span className="text-text-dim text-xs">Telefono</span>
+                <span className="text-white font-medium">{form.telefono}</span>
               </div>
-              <div>
-                <span className="text-text-dim">Persone:</span>
-                <span className="text-white ml-2">{form.persone}</span>
+              <div className="flex flex-col">
+                <span className="text-text-dim text-xs">Persone</span>
+                <span className="text-white font-medium">{form.persone}</span>
               </div>
-              <div>
-                <span className="text-text-dim">Data:</span>
-                <span className="text-white ml-2">{form.data}</span>
+              <div className="flex flex-col">
+                <span className="text-text-dim text-xs">Data e Ora</span>
+                <span className="text-white font-medium">{form.data} • {form.ora}</span>
               </div>
-              <div>
-                <span className="text-text-dim">Ora:</span>
-                <span className="text-white ml-2">{form.ora}</span>
-              </div>
-              <div>
-                <span className="text-text-dim">Ristorante:</span>
-                <span className="text-white ml-2">{restaurants.find(r => r.id === form.ristorante)?.name}</span>
+              <div className="flex flex-col col-span-2">
+                <span className="text-text-dim text-xs">Ristorante</span>
+                <span className="text-white font-medium">{restaurants.find(r => r.id === form.ristorante)?.name}</span>
               </div>
             </div>
             {form.note && (
-              <div>
-                <span className="text-text-dim text-sm">Note:</span>
+              <div className="pt-2 border-t border-white/5 mt-2">
+                <span className="text-text-dim text-xs">Note</span>
                 <p className="text-white text-sm mt-0.5">{form.note}</p>
               </div>
             )}
@@ -450,7 +527,7 @@ export default function BookingForm() {
           <div className="flex gap-3">
             <button
               type="button"
-              onClick={() => setStep(2)}
+              onClick={() => setStep(3)}
               className="flex-1 py-3.5 border border-white/10 hover:border-white/30 text-white text-sm tracking-widest uppercase rounded-lg transition-all duration-300"
             >
               Indietro

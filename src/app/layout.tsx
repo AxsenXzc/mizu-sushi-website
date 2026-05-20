@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import DynamicIsland from "@/components/DynamicIsland";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -32,6 +33,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <WhatsAppButton />
+        <Script src="https://cdn.iubenda.com/iubenda.js" strategy="afterInteractive" />
       </body>
     </html>
   );

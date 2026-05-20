@@ -36,7 +36,7 @@ export const menuCategories = [
       { name: "1. STICK GAMBERI 2pz", price: "€ 4,00", description: "involtini di gamberi*" },
       { name: "2. INVOLTINO 2pz", price: "€ 3,00", description: "verdure miste*e carne" },
       { name: "3. PATATINE FRITTE", price: "€ 2,50", description: "stick patate*" },
-      { name: "4. PANE FRITTO 2 pz", price: "€ 3,00", description: "" },
+      { name: "4. PANE FRITTO 2 pz", price: "€ 3,00", description: "croccante e dorato" },
       { name: "5. GYOZA 3 pz", price: "€ 5,00", description: "carne di maiale e verdure*" },
       { name: "6. SHAOMAI 3 pz", price: "€ 5,00", description: "carne di maiale e gamberi*" },
       { name: "7. GYOZA DI VERDURE 3 pz", price: "€ 5,00", description: "verdure miste*" },
@@ -57,7 +57,7 @@ export const menuCategories = [
       { name: "17. INSALATA MAIS", price: "€ 5,00", description: "insalata mais, sesamo e salsa" },
       { name: "18. INSALATA GRANCHIO", price: "€ 5,00", description: "insalata polpa di surimi, sesamo e salsa*" },
       { name: "19. INSALATA SASHIMI", price: "€ 6,00", description: "insalata con fette di branzino, gamberi, salmone, sesamo e salsa*" },
-      { name: "20. INSALATA DI POLIPO E RUCOLA", price: "€ 7,00", description: "" },
+      { name: "20. INSALATA DI POLIPO E RUCOLA", price: "€ 7,00", description: "polipo tenero e rucola" },
     ]
   },
   {
@@ -278,7 +278,7 @@ export const menuCategories = [
       { name: "158. UDON CON VERDURE", price: "€ 6,00", description: "verdure miste" },
       { name: "159. YAKI SOBA EBI", price: "€ 8,00", description: "spaghetti di verdure e gamberi*" },
       { name: "160. YAKI SOBA MANZO", price: "€ 8,00", description: "spaghetti di verdure e manzo" },
-      { name: "161. GNOCCHI DI RISO CON VERDURE", price: "€ 6,00", description: "" },
+      { name: "161. GNOCCHI DI RISO CON VERDURE", price: "€ 6,00", description: "gnocchi morbidi e verdure" },
       { name: "162. SPAGHETTI DI RISO CON GAMBERI", price: "€ 8,00", description: "gamberi, verdure miste e uova*" },
       { name: "163. SPAGHETTI DI RISO CON VERDURE MISTE", price: "€ 6,00", description: "verdure miste e uova" },
       { name: "164. SPAGHETTI DI SOIA CON GAMBERI", price: "€ 8,00", description: "gamberi e verdure miste*" },
@@ -299,7 +299,7 @@ export const menuCategories = [
       { name: "174. RISO SALTATO CON MANZO", price: "€ 7,00", description: "manzo, verdure miste e uova*" },
       { name: "175. RISO SALTATO CON POLLO", price: "€ 7,00", description: "pollo, verdure miste e uova*" },
       { name: "176. RISO ALLA CANTONESE", price: "€ 6,00", description: "piselli, prosciutto cotto e uova*" },
-      { name: "177. RISO VENERE SALTATO CON VERDURE E GAMBERI", price: "€ 8,00", description: "" },
+      { name: "177. RISO VENERE SALTATO CON VERDURE E GAMBERI", price: "€ 8,00", description: "riso nero, gamberi, verdure" },
     ]
   },
   {
@@ -308,8 +308,8 @@ export const menuCategories = [
       { name: "178. POLLO ALLE MANDORLE", price: "€ 6,00", description: "pollo, mandorle, peperoni e cipolla*" },
       { name: "179. POLLO CON SALSA PICCANTE", price: "€ 6,00", description: "pollo, peperoni, cipolla e salsa piccante*" },
       { name: "180. POLLO AL LIMONE", price: "€ 6,00", description: "pollo fritto con salsa di limone e sesamo*" },
-      { name: "181. POLLO CON FUNGHI E BAMBÙU'*", price: "€ 6,00", description: "" },
-      { name: "182. POLLO CON VERDURE*", price: "€ 6,00", description: "" },
+      { name: "181. POLLO CON FUNGHI E BAMBÙ", price: "€ 6,00", description: "funghi, bambù saltati" },
+      { name: "182. POLLO CON VERDURE", price: "€ 6,00", description: "verdure miste saltate" },
       { name: "183. POLLO AL CURRY", price: "€ 6,00", description: "pollo, curry e verdure mix*" },
       { name: "184. POLLO AGRODOLCE", price: "€ 6,00", description: "pollo, verdure e ananas*" },
     ]
@@ -317,22 +317,22 @@ export const menuCategories = [
   {
     name: "Secondi - Manzo",
     items: [
-      { name: "188. MANZO CON PATATE*", price: "€ 6,50", description: "" },
-      { name: "189. MANZO CON VERDURE MIX*", price: "€ 6,50", description: "" },
-      { name: "190. MANZO CON SALSA PICCANTE", price: "€ 6,50", description: "manzo, peperoni, cipolla e salsa piccante*" },
-      { name: "191. MANZO CON FUNGHI E BAMBÙÙ*", price: "€ 6,50", description: "" },
+      { name: "188. MANZO CON PATATE", price: "€ 6,50", description: "manzo e patate saltate" },
+      { name: "189. MANZO CON VERDURE MIX", price: "€ 6,50", description: "verdure miste saltate" },
+      { name: "190. MANZO CON SALSA PICCANTE", price: "€ 6,50", description: "manzo, peperoni, cipolla piccante" },
+      { name: "191. MANZO CON FUNGHI E BAMBÙ", price: "€ 6,50", description: "funghi e bambù saltati" },
       { name: "192. MANZO AL CURRY", price: "€ 6,50", description: "manzo, patate, cipolla, latte al cocco e salsa al curry*" },
     ]
   },
   {
     name: "Secondi - Gamberi",
     items: [
-      { name: "193. GAMBERI SALTATO CON VERDURE*", price: "€ 8,00", description: "" },
-      { name: "194. GAMBERI CON BAMBÙÙ E FUNGHI*", price: "€ 8,00", description: "" },
-      { name: "195. GAMBERI CON SALSA PICCANTE", price: "€ 8,00", description: "gamberi, peperoni, cipolla e salsa piccante*" },
+      { name: "193. GAMBERI SALTATO CON VERDURE", price: "€ 8,00", description: "gamberi e verdure miste" },
+      { name: "194. GAMBERI CON BAMBÙ E FUNGHI", price: "€ 8,00", description: "bambù, funghi e gamberi" },
+      { name: "195. GAMBERI CON SALSA PICCANTE", price: "€ 8,00", description: "gamberi, peperoni, cipolla piccante" },
       { name: "196. GAMBERI SALE E PEPE", price: "€ 8,00", description: "gamberi, peperoni, cipolla, sale e pepe*" },
       { name: "197. GAMBERI AL CURRY", price: "€ 8,00", description: "gamberi, cipolla, latte al cocco e salsa al curry*" },
-      { name: "198. GAMBERONI*", price: "€ 9,00", description: "" },
+      { name: "198. GAMBERONI", price: "€ 9,00", description: "gamberoni alla piastra calda" },
     ]
   },
   {
@@ -359,26 +359,26 @@ export const menuCategories = [
   {
     name: "Contorni",
     items: [
-      { name: "185. GERMOGLI DI SOIA", price: "€ 4,00", description: "" },
-      { name: "186. VERDURE MIX", price: "€ 5,00", description: "" },
-      { name: "187. FUNGHI E BAMBÙU'", price: "€ 5,00", description: "" },
+      { name: "185. GERMOGLI DI SOIA", price: "€ 4,00", description: "germogli freschi saltati" },
+      { name: "186. VERDURE MIX", price: "€ 5,00", description: "verdure miste di stagione" },
+      { name: "187. FUNGHI E BAMBÙ", price: "€ 5,00", description: "funghi e bambù saltati" },
     ]
   },
   {
     name: "Dessert",
     items: [
-      { name: "GELATO FRITTO", price: "€ 4,50", description: "" },
-      { name: "TARTUFO BIANCO", price: "€ 4,50", description: "" },
-      { name: "TARTUFO NERO", price: "€ 4,50", description: "" },
-      { name: "TARTUFO AL CAFFE'", price: "€ 4,50", description: "" },
-      { name: "MOCHI MISTO 3pz", price: "€ 5,50", description: "" },
-      { name: "COPPA AL COCCO", price: "€ 5,00", description: "" },
-      { name: "PROFITEROL NERO 3 pz", price: "€ 5,00", description: "" },
-      { name: "CHEESE CAKE", price: "€ 5,50", description: "" },
-      { name: "TARTUFO AL PISTACCHIO", price: "€ 5,50", description: "" },
-      { name: "TIRAMISU", price: "€ 4,50", description: "" },
-      { name: "TORTINO AL CIOCCOLATO", price: "€ 4,50", description: "" },
-      { name: "GELATO", price: "€ 3,50", description: "" },
+      { name: "GELATO FRITTO", price: "€ 4,50", description: "gelato in tempura croccante" },
+      { name: "TARTUFO BIANCO", price: "€ 4,50", description: "gelato vaniglia e cioccolato" },
+      { name: "TARTUFO NERO", price: "€ 4,50", description: "gelato cioccolato fondente" },
+      { name: "TARTUFO AL CAFFÈ", price: "€ 4,50", description: "gelato al gusto caffè" },
+      { name: "MOCHI MISTO 3pz", price: "€ 5,50", description: "dolcetti giapponesi di riso" },
+      { name: "COPPA AL COCCO", price: "€ 5,00", description: "crema di cocco fresca" },
+      { name: "PROFITEROL NERO 3 pz", price: "€ 5,00", description: "bignè al cioccolato fondente" },
+      { name: "CHEESE CAKE", price: "€ 5,50", description: "cheesecake cremosa classica" },
+      { name: "TARTUFO AL PISTACCHIO", price: "€ 5,50", description: "gelato al pistacchio siciliano" },
+      { name: "TIRAMISU", price: "€ 4,50", description: "classico con mascarpone e caffè" },
+      { name: "TORTINO AL CIOCCOLATO", price: "€ 4,50", description: "cuore fondente caldo" },
+      { name: "GELATO", price: "€ 3,50", description: "gusti assortiti artigianale" },
     ]
   },
   {

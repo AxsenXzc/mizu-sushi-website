@@ -11,6 +11,24 @@ export default function MenuPage() {
   const [activeTab, setActiveTab] = useState<"infinity" | "asporto">("infinity");
   const [activeCategory, setActiveCategory] = useState(0);
 
+  // Helper function to assign emojis to categories automatically
+  const getCategoryEmoji = (name: string) => {
+    const lower = name.toLowerCase();
+    if (lower.includes("sushi") || lower.includes("nigiri") || lower.includes("sashimi") || lower.includes("maki") || lower.includes("gunkan") || lower.includes("chirashi") || lower.includes("tartare") || lower.includes("barca")) return "🍣";
+    if (lower.includes("antipast")) return "🥟";
+    if (lower.includes("zupp")) return "🥣";
+    if (lower.includes("insalat")) return "🥗";
+    if (lower.includes("riso") || lower.includes("gohan")) return "🍚";
+    if (lower.includes("spaghetti") || lower.includes("udon") || lower.includes("soba") || lower.includes("ramen") || lower.includes("primi")) return "🍜";
+    if (lower.includes("pollo") || lower.includes("manzo") || lower.includes("maiale") || lower.includes("vitello") || lower.includes("secondi") || lower.includes("teppan") || lower.includes("griglia") || lower.includes("carne")) return "🥩";
+    if (lower.includes("gamber") || lower.includes("pesce") || lower.includes("frutti di mare") || lower.includes("calamar") || lower.includes("salmone")) return "🍤";
+    if (lower.includes("tempura") || lower.includes("fritt")) return "🍤";
+    if (lower.includes("contorn") || lower.includes("verdur") || lower.includes("edamame") || lower.includes("soia")) return "🥬";
+    if (lower.includes("dessert") || lower.includes("dolci")) return "🍰";
+    if (lower.includes("bevand") || lower.includes("bibite") || lower.includes("birr") || lower.includes("vin") || lower.includes("drink")) return "🍹";
+    return "🥢";
+  };
+
   // Reset category when switching restaurants to avoid out-of-bounds index
   useEffect(() => {
     setActiveCategory(0);
@@ -64,24 +82,36 @@ export default function MenuPage() {
             <div className="flex flex-col sm:flex-row justify-center gap-4 max-w-2xl mx-auto">
               <button
                 onClick={() => setActiveRestaurant("mizu")}
-                className={`flex-1 py-4 px-6 rounded-2xl text-xl font-bold transition-all duration-300 ${
+                className={`flex-1 py-5 px-6 rounded-2xl text-xl font-bold transition-all duration-300 relative overflow-hidden ${
                   activeRestaurant === "mizu"
-                    ? "bg-gradient-to-r from-primary to-primary-dark text-white shadow-lg shadow-primary/30 scale-105 border border-primary-light/50"
+                    ? "badge-mizu text-white shadow-lg shadow-red-500/30 scale-105 border border-red-400/50"
                     : "bg-surface/50 backdrop-blur-sm text-text-muted border border-white/10 hover:border-white/30 hover:text-white"
                 }`}
               >
-                Mizu Sushi
+                {activeRestaurant === "mizu" && (
+                  <span className="absolute top-3 right-3 flex h-3 w-3">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+                  </span>
+                )}
+                🍣 Mizu Sushi
                 <span className="block text-sm font-normal opacity-80 mt-1">Feltre (BL)</span>
               </button>
               <button
                 onClick={() => setActiveRestaurant("susiyan")}
-                className={`flex-1 py-4 px-6 rounded-2xl text-xl font-bold transition-all duration-300 ${
+                className={`flex-1 py-5 px-6 rounded-2xl text-xl font-bold transition-all duration-300 relative overflow-hidden ${
                   activeRestaurant === "susiyan"
-                    ? "bg-gradient-to-r from-primary to-primary-dark text-white shadow-lg shadow-primary/30 scale-105 border border-primary-light/50"
+                    ? "badge-susiyan text-white shadow-lg shadow-yellow-500/30 scale-105 border border-yellow-400/50"
                     : "bg-surface/50 backdrop-blur-sm text-text-muted border border-white/10 hover:border-white/30 hover:text-white"
                 }`}
               >
-                Sushi Yan
+                {activeRestaurant === "susiyan" && (
+                  <span className="absolute top-3 right-3 flex h-3 w-3">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+                  </span>
+                )}
+                🥢 Sushi Yan
                 <span className="block text-sm font-normal opacity-80 mt-1">Belluno</span>
               </button>
             </div>
@@ -466,49 +496,61 @@ export default function MenuPage() {
               </div>
             </ScrollReveal>
 
-            {/* Category Tabs */}
-            <ScrollReveal>
-              <div className="flex flex-wrap justify-center gap-2 mb-12">
+            {/* Category Tabs (Sticky on Mobile & Desktop) */}
+            <div className="sticky top-[72px] md:top-[88px] z-40 sticky-restaurant px-2 py-3 md:py-4 rounded-2xl mx-auto max-w-5xl mb-10 shadow-xl -mx-4 sm:mx-auto">
+              <div className="category-scroll flex items-center gap-2 md:gap-3 px-2">
                 {currentCategories.map((cat, i) => (
                   <button
                     key={i}
                     onClick={() => setActiveCategory(i)}
-                    className={`px-5 py-2.5 text-xs tracking-widest uppercase rounded-full transition-all duration-300 ${
+                    className={`flex items-center gap-2 px-4 py-2.5 md:px-5 md:py-3 text-sm font-medium tracking-wide whitespace-nowrap rounded-full transition-all duration-300 ${
                       i === activeCategory
-                        ? "bg-primary text-white shadow-md shadow-primary/20"
+                        ? activeRestaurant === "mizu" 
+                          ? "bg-primary text-white shadow-lg shadow-primary/30 cat-pill-active" 
+                          : "bg-gold text-black shadow-lg shadow-gold/30 cat-pill-active"
                         : "bg-surface text-text-muted border border-white/10 hover:border-white/30 hover:text-white"
                     }`}
                   >
-                    {cat.name}
+                    <span className="text-lg leading-none">{getCategoryEmoji(cat.name)}</span>
+                    <span>{cat.name}</span>
+                    <span className={`ml-1 px-2 py-0.5 rounded-full text-[10px] font-bold ${
+                      i === activeCategory
+                        ? activeRestaurant === "mizu" ? "bg-white/20 text-white" : "bg-black/20 text-black"
+                        : "bg-white/5 text-text-dim"
+                    }`}>
+                      {cat.items?.length || 0}
+                    </span>
                   </button>
                 ))}
               </div>
-            </ScrollReveal>
+            </div>
 
             {/* Menu Items Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {currentCategories[activeCategory]?.items?.map((item, i) => (
-                <ScrollReveal key={i} delay={(i % 10) * 50}>
-                  <div className="group h-full p-5 bg-surface rounded-xl border border-white/5 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
-                    <div className="flex items-start justify-between gap-4">
-                      <div className="flex-1">
-                        <h3 className="text-base font-semibold text-white group-hover:text-primary-light transition-colors">
-                          {item.name}
-                        </h3>
-                        {item.description && (
-                          <p className="text-sm text-text-muted mt-2 leading-relaxed">
-                            {item.description}
-                          </p>
-                        )}
-                      </div>
-                      <div className="px-3 py-1 bg-surface-light rounded-lg border border-white/5">
-                        <span className="text-lg font-bold text-gold whitespace-nowrap">
-                          {getItemPrice(item.price)}
-                        </span>
-                      </div>
+                <div 
+                  key={`${activeCategory}-${i}`} 
+                  className="menu-card group h-full p-4 md:p-5 bg-surface rounded-xl border border-white/5 transition-all duration-300 relative overflow-hidden"
+                  style={{ animationDelay: `${(i % 10) * 0.05}s` }}
+                >
+                  <div className="flex items-start justify-between gap-3 md:gap-4">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-base font-semibold text-white group-hover:text-primary-light transition-colors truncate whitespace-normal line-clamp-2">
+                        {item.name}
+                      </h3>
+                      {item.description && (
+                        <p className="text-xs md:text-sm text-text-muted mt-1.5 md:mt-2 leading-relaxed line-clamp-3">
+                          {item.description}
+                        </p>
+                      )}
+                    </div>
+                    <div className="px-3 py-1 bg-surface-light rounded-lg border border-white/5 shrink-0 shadow-inner">
+                      <span className="text-base md:text-lg font-bold text-gold whitespace-nowrap">
+                        {getItemPrice(item.price)}
+                      </span>
                     </div>
                   </div>
-                </ScrollReveal>
+                </div>
               ))}
             </div>
           </div>

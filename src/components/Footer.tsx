@@ -88,23 +88,42 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex flex-col gap-1">
-            <p className="text-xs text-text-dim">
-              &copy; {new Date().getFullYear()} Mizu Sushi &amp; Sushi Yan. Tutti i diritti riservati.
-            </p>
-            <p className="text-xs text-text-dim">
-              MIZU Ristorante S.A.S. di He Lixian &amp; C. | P.IVA — —
-            </p>
+          <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-1">
+              <p className="text-xs text-text-dim">
+                &copy; {new Date().getFullYear()} Mizu Sushi &amp; Sushi Yan. Tutti i diritti riservati.
+              </p>
+              <p className="text-xs text-text-dim">
+                MIZU Ristorante S.A.S. di He Lixian &amp; C. | P.IVA — —
+              </p>
+            </div>
+            <div className="flex gap-4">
+              <a 
+                href="https://www.iubenda.com/privacy-policy/58311379" 
+                className="iubenda-black iubenda-noiframe iubenda-embed text-xs text-text-dim hover:text-primary-light transition-colors" 
+                title="Privacy Policy"
+              >
+                Privacy Policy
+              </a>
+              <a 
+                href="https://www.iubenda.com/privacy-policy/58311379/cookie-policy" 
+                className="iubenda-black iubenda-noiframe iubenda-embed text-xs text-text-dim hover:text-primary-light transition-colors" 
+                title="Cookie Policy"
+              >
+                Cookie Policy
+              </a>
+            </div>
           </div>
-          <div className="flex items-center gap-2 text-xs">
+          <div className="flex items-center gap-2 text-xs relative group cursor-pointer z-50">
             <span className="text-text-dim">Realizzato con passione da</span>
             <a 
               href="https://devduos.netlify.app" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-gold to-[#f5d078] hover:from-white hover:to-white transition-all duration-300 tracking-wider hover:scale-105"
+              className="axsen-credits font-mono font-bold text-white tracking-widest uppercase transition-transform duration-300"
+              data-text="AxsenDeb"
             >
-              Axsen.Dev
+              AxsenDeb
             </a>
           </div>
         </div>
