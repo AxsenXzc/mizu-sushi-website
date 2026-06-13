@@ -411,11 +411,22 @@ export const menuSusiyanAsporto = [
   {
     name: "Antipasti",
     items: [
-      { name: "3) PATATINE FRITTE", price: "€ 2,50", description: "Stick patate*" },
-      { name: "14) PANE DOLCE CONIGLIO", price: "€ 3,50", description: "Farina, uova al vapore" },
-      { name: "13) EDAMAME", price: "€ 4,00", description: "Fagiolini di soia e sale*" },
-      { name: "12) WAKAME NERO", price: "€ 4,00", description: "Insalata di alghe e sesamo" },
-      { name: "10) GOMA WAKAME", price: "€ 5,00", description: "Insalata di alghe piccante*" }
+      { name: "1) INVOLTINO PRIMAVERA (2pz)", price: "€ 3,00", description: "Verdure miste e carne" },
+      { name: "2) INVOLTINI DI GAMBERI (2pz)", price: "€ 4,00", description: "Gamberi fritti" },
+      { name: "3) SURIMI FRITTO", price: "€ 4,00", description: "Granchio fritto" },
+      { name: "4) PANE FRITTO (2pz)", price: "€ 3,00", description: "" },
+      { name: "5) PANE CINESE (2pz)", price: "€ 3,00", description: "Pane al vapore" },
+      { name: "6) RAVIOLI AL VAPORE (4pz)", price: "€ 4,00", description: "Ripieni di carne e verdure" },
+      { name: "7) RAVIOLI AI GAMBERI (4pz)", price: "€ 4,00", description: "Ripieno di carne, gamberi e verdure" },
+      { name: "8) RAVIOLI VEGETARIANI (2pz)", price: "€ 6,00", description: "Ripieno verdure miste" },
+      { name: "9) RAVIOLI ALLA GRIGLIA (4pz)", price: "€ 4,00", description: "Ripieno di carne e verdure" },
+      { name: "10) GOMA WAKAME", price: "€ 4,00", description: "Insalata di alghe piccante" },
+      { name: "11) EBI SU", price: "€ 5,00", description: "Alghe e gambero cotto" },
+      { name: "12) COCKTAIL DI GAMBERI", price: "€ 6,00", description: "Gamberi con salsa rosa" },
+      { name: "13) EDAMAME", price: "€ 4,50", description: "Fagioli di soia" },
+      { name: "14) PATATINE FRITTE", price: "€ 4,00", description: "Patate fritte" },
+      { name: "15) PANE DOLCE CONIGLIO", price: "€ 3,50", description: "Farina, uova al vapore" },
+      { name: "16) WAKAME NERO", price: "€ 4,00", description: "Insalata di alghe e sesamo" }
     ]
   },
   {
@@ -598,8 +609,7 @@ export const menuSusiyanAsporto = [
       { name: "197) GAMBERI AL CURRY", price: "€ 8,00", description: "Gamberi, cipolla, latte al cocco e salsa al curry*" },
       { name: "193) GAMBERI CON VERDURE", price: "€ 8,00", description: "Gamberi e verdure miste" },
       { name: "194) GAMBERI CON BAMBÙ E FUNGHI", price: "€ 8,00", description: "Bambù, funghi e gamberi" },
-      { name: "203) SPIEDINI DI POLLO", price: "€ 6,00", description: "Spiedini di pollo marinato* salsa teriyaki" },
-      { name: "11) COCKTAIL DI GAMBERI", price: "€ 7,00", description: "Gamberetti con salsa rosa*" }
+      { name: "203) SPIEDINI DI POLLO", price: "€ 6,00", description: "Spiedini di pollo marinato* salsa teriyaki" }
     ]
   },
   {
