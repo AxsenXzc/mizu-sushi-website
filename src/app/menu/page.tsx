@@ -38,7 +38,7 @@ export default function MenuPage() {
   const currentCategories = activeRestaurant === "mizu" 
     ? menuCategories 
     : activeTab === "infinity" ? menuSusiyanListino : menuSusiyanAsporto;
-  const whatsappUrl = restaurantInfo ? `https://wa.me/${restaurantInfo.whatsappLink}` : "#";
+  const whatsappUrl = restaurantInfo ? `{{https://wa.me/${restaurantInfo.whatsappLink}}}` : "#";
 
   // Formats price dynamically: splits dual pricing (e.g. € 1,00 / € 3,00) based on tab
   const getItemPrice = (price: string) => {
