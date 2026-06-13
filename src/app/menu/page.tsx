@@ -56,10 +56,10 @@ export default function MenuPage() {
         <div className="absolute inset-0">
           <div
             className="absolute inset-0"
-            style={{
+            style=
               background:
                 "radial-gradient(ellipse at 50% 50%, rgba(196,30,58,0.15) 0%, transparent 60%)",
-            }}
+            
           />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto text-center">
@@ -205,7 +205,7 @@ export default function MenuPage() {
                         </p>
                         <div className="flex items-baseline gap-2 mb-6">
                           <span className="text-5xl font-extrabold text-gold">
-                            €14,90
+                            €15,90
                           </span>
                           <span className="text-text-dim">/persona</span>
                         </div>
@@ -234,7 +234,7 @@ export default function MenuPage() {
                         </p>
                         <div className="flex items-baseline gap-2 mb-6">
                           <span className="text-5xl font-extrabold text-gold">
-                            €24,90
+                            €25,90
                           </span>
                           <span className="text-text-dim">/persona</span>
                         </div>
@@ -311,8 +311,38 @@ export default function MenuPage() {
                     </div>
                   </ScrollReveal>
 
-                  <div className="flex justify-center">
-                    <ScrollReveal delay={200} className="w-full max-w-lg">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {/* Lunch */}
+                    <ScrollReveal delay={100}>
+                      <div className="relative p-8 rounded-2xl bg-gradient-to-b from-surface-light to-surface border border-white/10 hover:border-primary/30 transition-all group overflow-hidden">
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-bl-[100px] -z-10 group-hover:bg-primary/20 transition-colors" />
+                        <h3 className="text-2xl font-bold text-white mb-2">
+                          Pranzo Infinity
+                        </h3>
+                        <p className="text-text-muted mb-6">
+                          Tutti i giorni a pranzo
+                        </p>
+                        <div className="flex items-baseline gap-2 mb-6">
+                          <span className="text-5xl font-extrabold text-gold">
+                            €15,90
+                          </span>
+                          <span className="text-text-dim">/persona</span>
+                        </div>
+                        <ul className="space-y-3 text-sm text-text-muted">
+                          <li className="flex items-center gap-2">
+                            <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                            Bevande e dolci esclusi
+                          </li>
+                          <li className="flex items-center gap-2">
+                            <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                            I bambini fino a 120 cm di altezza pagano la metà
+                          </li>
+                        </ul>
+                      </div>
+                    </ScrollReveal>
+
+                    {/* Dinner */}
+                    <ScrollReveal delay={200}>
                       <div className="relative p-8 rounded-2xl bg-gradient-to-b from-surface-light to-surface border border-primary/30 hover:border-primary/50 transition-all group overflow-hidden shadow-[0_0_30px_-10px_rgba(196,30,58,0.3)]">
                         <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-bl-[100px] -z-10 group-hover:bg-primary/30 transition-colors" />
                         <h3 className="text-2xl font-bold text-white mb-2">
@@ -323,7 +353,7 @@ export default function MenuPage() {
                         </p>
                         <div className="flex items-baseline gap-2 mb-6">
                           <span className="text-5xl font-extrabold text-gold">
-                            €23,90
+                            €25,90
                           </span>
                           <span className="text-text-dim">/persona</span>
                         </div>
@@ -345,85 +375,6 @@ export default function MenuPage() {
                             Il costo del coperto è incluso nella formula
                           </li>
                         </ul>
-                      </div>
-                    </ScrollReveal>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-                    <ScrollReveal delay={300}>
-                      <div className="h-full flex items-start gap-4 p-6 rounded-xl bg-surface border border-white/5">
-                        <svg
-                          className="w-6 h-6 text-primary flex-shrink-0 mt-0.5"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                          />
-                        </svg>
-                        <div>
-                          <h4 className="text-white font-medium mb-3">
-                            Le 4 Regole del Menu Infinity
-                          </h4>
-                          <ol className="space-y-3 text-sm text-text-muted list-decimal pl-4">
-                            <li>
-                              Il menù infinity viene applicato a tutti i commensali del tavolo.
-                            </li>
-                            <li>
-                              È possibile ordinare tutti i piatti presenti nel seguente menù.
-                            </li>
-                            <li>
-                              Alcuni piatti prevedono un limite di porzioni a persona.
-                            </li>
-                            <li>
-                              Le pietanze ordinate ma non consumate verranno addebitate a prezzo di listino.
-                            </li>
-                          </ol>
-                        </div>
-                      </div>
-                    </ScrollReveal>
-
-                    <ScrollReveal delay={400}>
-                      <div className="h-full flex items-start gap-4 p-6 rounded-xl bg-surface border border-white/5">
-                        <svg
-                          className="w-6 h-6 text-primary flex-shrink-0 mt-0.5"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
-                          />
-                        </svg>
-                        <div className="space-y-4">
-                          <div>
-                            <h4 className="text-white font-medium mb-1">
-                              Avviso Spreco e Regolamento CE
-                            </h4>
-                            <p className="text-sm text-text-muted leading-relaxed">
-                              Si prega di non sprecare il cibo; eventuali eccessi non consumati verranno conteggiati al prezzo di listino.
-                            </p>
-                          </div>
-                          <div>
-                            <h4 className="text-white font-medium mb-1 text-sm">
-                              Allergeni & Pesce Crudo
-                            </h4>
-                            <p className="text-xs text-text-dim leading-relaxed">
-                              In caso di allergie alimentari, il cliente è invitato a dichiararle al momento dell&apos;ordinazione (Regolamento CE 1169/2011, D.Lgs. 109/1992).
-                              <br />
-                              <span className="italic block mt-1">In case of food allergies, the consumer is invited to declare their allergenic diseases at the time of ordering.</span>
-                              <br />
-                              Tutto il pesce utilizzato è bonificato secondo la normativa vigente per il pesce crudo (Regolamento CE n. 853 del 2004).
-                            </p>
-                          </div>
-                        </div>
                       </div>
                     </ScrollReveal>
                   </div>
@@ -451,8 +402,8 @@ export default function MenuPage() {
                     : "Scegli i tuoi piatti preferiti da asporto. Ordinazione rapida e ingredienti sempre freschissimi."}
                 </p>
 
-                {/* Takeaway Deal - Only for Mizu and only for Asporto */}
-                {activeRestaurant === "mizu" && activeTab === "asporto" && (
+                {/* Takeaway Deal - Only for Asporto */}
+                {activeTab === "asporto" && (
                   <div className="max-w-md mx-auto mb-10">
                     <div className="relative p-6 rounded-2xl bg-gradient-to-br from-surface-light to-surface border border-primary/30 hover:border-primary/50 transition-all group overflow-hidden shadow-[0_0_30px_-10px_rgba(196,30,58,0.3)]">
                       <div className="absolute top-0 right-0 w-24 h-24 bg-primary/15 rounded-bl-[80px] -z-10 group-hover:bg-primary/25 transition-colors" />
