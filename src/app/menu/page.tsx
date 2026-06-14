@@ -38,7 +38,7 @@ export default function MenuPage() {
   const currentCategories = activeRestaurant === "mizu" 
     ? menuCategories 
     : activeTab === "infinity" ? menuSusiyanListino : menuSusiyanAsporto;
-  const whatsappUrl = restaurantInfo ? `https://wa.me/${restaurantInfo.whatsappLink}` : "#";
+  const whatsappUrl = restaurantInfo ? "https://" + "wa.me/" + restaurantInfo.whatsappLink : "#";
 
   // Formats price dynamically: splits dual pricing (e.g. € 1,00 / € 3,00) based on tab
   const getItemPrice = (price: string) => {
@@ -54,10 +54,7 @@ export default function MenuPage() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 bg-gradient-hero overflow-hidden">
         <div className="absolute inset-0">
-          <div
-            className="absolute inset-0"
-            style= background: "radial-gradient(ellipse at 50% 50%, rgba(196,30,58,0.15) 0%, transparent 60%)" 
-          />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_50%,rgba(196,30,58,0.15)_0%,transparent_60%)]" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <ScrollReveal>
