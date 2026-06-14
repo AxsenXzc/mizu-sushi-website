@@ -1,4 +1,0 @@
-START>>>
-              background:
-                "radial-gradient(ellipse at 50% 50%, rgba(196,30,58,0.15) 0%, transparent 60%)",
-            <<<END
