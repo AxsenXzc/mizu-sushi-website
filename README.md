@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mizu Sushi & Sushi Yan — Sito Web
 
-## Getting Started
+Sito web ufficiale dei ristoranti giapponesi/cinesi **Mizu Sushi** (Feltre, BL) e **Sushi Yan** (Belluno, BL): menu, galleria, contatti, mappe e prenotazioni via WhatsApp.
 
-First, run the development server:
+## Stack tecnologico
+
+- **Next.js 16** (App Router) + **React 19**
+- **TypeScript 5**
+- **Tailwind CSS 4**
+- Deploy su **Netlify** (`@netlify/plugin-nextjs`)
+
+## Requisiti
+
+- Node.js **20+**
+- npm
+
+## Sviluppo locale
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Apri [http://localhost:3000](http://localhost:3000) nel browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Script disponibili:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Comando | Descrizione |
+| --- | --- |
+| `npm run dev` | Avvia il server di sviluppo |
+| `npm run build` | Build di produzione |
+| `npm run start` | Avvia il build di produzione |
+| `npm run lint` | Esegue ESLint |
 
-## Learn More
+## Variabili d'ambiente
 
-To learn more about Next.js, take a look at the following resources:
+Le prenotazioni/notifiche WhatsApp usano l'API [CallMeBot](https://www.callmebot.com/). Crea un file `.env.local` (non committare) con:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Mizu Sushi (Feltre)
+CALLMEBOT_API_KEY=la_tua_api_key
+CALLMEBOT_PHONE=393272898873
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Sushi Yan (Belluno) — opzionale, fallback su Mizu se assenti
+CALLMEBOT_API_KEY_SUSIYAN=la_tua_api_key
+CALLMEBOT_PHONE_SUSIYAN=39043727044
+```
 
-## Deploy on Vercel
+> Le stesse chiavi possono essere definite con prefisso `NEXT_PUBLIC_` se necessario lato client.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Immagini della galleria
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Le foto vanno caricate localmente in `public/images/gallery/` con i nomi indicati nella pagina Galleria (es. `piatto.jpg`, `locale1.jpg`, ...). Le immagini sono servite come asset statici locali.
+
+## Build & Deploy (Netlify)
+
+Il deploy è configurato in `netlify.toml`:
+
+```toml
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[build.environment]
+  NODE_VERSION = "20"
+```
+
+Ricorda di impostare le variabili d'ambiente CallMeBot anche nelle impostazioni del sito Netlify.
+
+## Struttura del progetto
+
+```
+src/
+  app/            # Pagine (App Router): home, menu, galleria, contatti, chi-siamo, prenotazioni
+    api/booking/  # Endpoint prenotazione (CallMeBot)
+  components/     # Componenti UI riutilizzabili
+  lib/            # Dati (ristoranti, menu, recensioni)
+public/           # Asset statici (immagini, ecc.)
+```
+
+## Crediti
+
+Realizzato da [DevDuos](https://devduos.netlify.app).

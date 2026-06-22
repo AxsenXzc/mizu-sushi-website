@@ -41,3 +41,13 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# --- Artefatti di lavoro / scratch (non destinati alla produzione) ---
+/scratch/
+/extracted_docx/
+/.genkit/
+extracted_text.txt
+scratch_parse.js
+
+# File sorgente menu pesanti (documenti originali, non necessari al build)
+*.docx
