@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import DynamicIsland from "@/components/DynamicIsland";
 import CookieConsent from "@/components/CookieConsent";
 import Analytics from "@/components/Analytics";
+import StructuredData from "@/components/StructuredData";
 import "./globals.css";
 import "./animations.css";
 
@@ -34,6 +35,10 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  themeColor: "#0a0a0a",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -42,6 +47,7 @@ export default function RootLayout({
   return (
     <html lang="it">
       <body className="min-h-screen flex flex-col bg-gradient-radial">
+        <StructuredData />
         <DynamicIsland />
         <Header />
         <main className="flex-1">{children}</main>
