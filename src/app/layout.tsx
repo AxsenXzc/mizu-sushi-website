@@ -7,6 +7,7 @@ import CookieConsent from "@/components/CookieConsent";
 import Analytics from "@/components/Analytics";
 import Script from "next/script";
 import "./globals.css";
+import "./animations.css";
 
 export const metadata: Metadata = {
   title: "Mizu Sushi | Ristorante Giapponese & Cinese",

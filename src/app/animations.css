@@ -1,0 +1,112 @@
+/* ===========================================
+   Animazioni premium, effetti 3D e ottimizzazioni mobile
+   Caricato DOPO globals.css (vedi layout.tsx)
+   =========================================== */
+
+/* --- Mobile / touch polish --- */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Evita che gli effetti hover restino "incollati" su dispositivi touch */
+@media (hover: none) {
+  .menu-card:hover {
+    transform: none;
+  }
+}
+
+/* --- Profondità 3D sulle menu card --- */
+.menu-card {
+  transform-style: preserve-3d;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease, border-color 0.35s ease, background 0.35s ease;
+}
+
+@media (hover: hover) {
+  .menu-card:hover {
+    transform: translateY(-4px) translateZ(20px) scale(1.015);
+  }
+}
+
+/* --- Riflesso premium sui pulsanti glow --- */
+.glow-red {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-red::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.25),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: left 0.6s ease;
+  pointer-events: none;
+}
+
+.glow-red:hover::after {
+  left: 140%;
+}
+
+/* --- Animazione fluttuante 3D --- */
+@keyframes float3d {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(1.5deg); }
+}
+
+.animate-float {
+  animation: float3d 6s ease-in-out infinite;
+}
+
+/* --- Gradiente animato (testi/bordi premium) --- */
+@keyframes gradientPan {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientPan 8s ease infinite;
+}
+
+/* --- Ingresso con leggera prospettiva 3D --- */
+@keyframes rise3d {
+  from {
+    opacity: 0;
+    transform: perspective(1000px) rotateX(8deg) translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: perspective(1000px) rotateX(0) translateY(0);
+  }
+}
+
+.animate-rise-3d {
+  animation: rise3d 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* --- Rispetta le preferenze di riduzione del movimento --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
