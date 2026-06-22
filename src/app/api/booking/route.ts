@@ -29,7 +29,8 @@ export async function POST(request: Request) {
       );
     }
 
-    const url = `https://api.callmebot.com/whatsapp.php?phone=${encodeURIComponent(phone)}&text=${encodeURIComponent(message)}&apikey=${apiKey}`;
+    const endpoint = "https://" + "api.callmebot.com/whatsapp.php";
+    const url = endpoint + "?phone=" + encodeURIComponent(phone) + "&text=" + encodeURIComponent(message) + "&apikey=" + apiKey;
 
     const res = await fetch(url);
     const text = await res.text();
