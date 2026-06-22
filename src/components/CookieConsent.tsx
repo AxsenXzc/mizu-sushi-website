@@ -124,17 +124,13 @@ export default function CookieConsent() {
 
         <div className="flex flex-wrap gap-x-4 gap-y-1 mt-3 text-xs">
           <a
-            href="https://www.iubenda.com/privacy-policy/58311379"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/privacy"
             className="text-primary-light hover:text-primary transition-colors"
           >
             Privacy Policy
           </a>
           <a
-            href="https://www.iubenda.com/privacy-policy/58311379/cookie-policy"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/cookie-policy"
             className="text-primary-light hover:text-primary transition-colors"
           >
             Cookie Policy

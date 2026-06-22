@@ -90,29 +90,22 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex flex-col gap-2">
-            <div className="flex flex-col gap-1">
-              <p className="text-xs text-text-dim">
-                &copy; {new Date().getFullYear()} Mizu Sushi &amp; Sushi Yan. Tutti i diritti riservati.
-              </p>
-              <p className="text-xs text-text-dim">
-                MIZU Ristorante S.A.S. di He Lixian &amp; C. | P.IVA — —
-              </p>
-            </div>
+            <p className="text-xs text-text-dim">
+              &copy; {new Date().getFullYear()} Mizu Sushi &amp; Sushi Yan. Tutti i diritti riservati.
+            </p>
             <div className="flex flex-wrap gap-4 items-center">
-              <a
-                href="https://www.iubenda.com/privacy-policy/58311379"
-                className="iubenda-black iubenda-noiframe iubenda-embed text-xs text-text-dim hover:text-primary-light transition-colors"
-                title="Privacy Policy"
+              <Link
+                href="/privacy"
+                className="text-xs text-text-dim hover:text-primary-light transition-colors"
               >
                 Privacy Policy
-              </a>
-              <a
-                href="https://www.iubenda.com/privacy-policy/58311379/cookie-policy"
-                className="iubenda-black iubenda-noiframe iubenda-embed text-xs text-text-dim hover:text-primary-light transition-colors"
-                title="Cookie Policy"
+              </Link>
+              <Link
+                href="/cookie-policy"
+                className="text-xs text-text-dim hover:text-primary-light transition-colors"
               >
                 Cookie Policy
-              </a>
+              </Link>
               <CookiePreferencesButton />
             </div>
           </div>

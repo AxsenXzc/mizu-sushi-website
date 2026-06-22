@@ -4,7 +4,7 @@ import Script from "next/script";
 import { useState, useEffect } from "react";
 import { getStoredConsent } from "./CookieConsent";
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-64Z6EVZ5MQ";
 
 export default function Analytics() {
   const [enabled, setEnabled] = useState(false);
