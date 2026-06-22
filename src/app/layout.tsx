@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import DynamicIsland from "@/components/DynamicIsland";
 import CookieConsent from "@/components/CookieConsent";
+import Analytics from "@/components/Analytics";
 import Script from "next/script";
 import "./globals.css";
 
@@ -35,6 +36,7 @@ export default function RootLayout({
         <Footer />
         <WhatsAppButton />
         <CookieConsent />
+        <Analytics />
         <Script src="https://cdn.iubenda.com/iubenda.js" strategy="afterInteractive" />
       </body>
     </html>
