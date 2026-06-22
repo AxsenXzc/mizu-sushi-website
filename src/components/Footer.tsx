@@ -1,6 +1,7 @@
 import { restaurants } from "@/lib/data";
 import Link from "next/link";
 import Logo from "./Logo";
+import CookiePreferencesButton from "./CookiePreferencesButton";
 
 export default function Footer() {
   return (
@@ -97,28 +98,29 @@ export default function Footer() {
                 MIZU Ristorante S.A.S. di He Lixian &amp; C. | P.IVA — —
               </p>
             </div>
-            <div className="flex gap-4">
-              <a 
-                href="https://www.iubenda.com/privacy-policy/58311379" 
-                className="iubenda-black iubenda-noiframe iubenda-embed text-xs text-text-dim hover:text-primary-light transition-colors" 
+            <div className="flex flex-wrap gap-4 items-center">
+              <a
+                href="https://www.iubenda.com/privacy-policy/58311379"
+                className="iubenda-black iubenda-noiframe iubenda-embed text-xs text-text-dim hover:text-primary-light transition-colors"
                 title="Privacy Policy"
               >
                 Privacy Policy
               </a>
-              <a 
-                href="https://www.iubenda.com/privacy-policy/58311379/cookie-policy" 
-                className="iubenda-black iubenda-noiframe iubenda-embed text-xs text-text-dim hover:text-primary-light transition-colors" 
+              <a
+                href="https://www.iubenda.com/privacy-policy/58311379/cookie-policy"
+                className="iubenda-black iubenda-noiframe iubenda-embed text-xs text-text-dim hover:text-primary-light transition-colors"
                 title="Cookie Policy"
               >
                 Cookie Policy
               </a>
+              <CookiePreferencesButton />
             </div>
           </div>
           <div className="flex items-center gap-2 text-xs relative group cursor-pointer z-50">
             <span className="text-text-dim">Realizzato con passione da</span>
-            <a 
-              href="https://devduos.netlify.app" 
-              target="_blank" 
+            <a
+              href="https://devduos.netlify.app"
+              target="_blank"
               rel="noopener noreferrer"
               className="axsen-credits font-mono font-bold text-white tracking-widest uppercase transition-transform duration-300"
               data-text="AxsenDeb"
