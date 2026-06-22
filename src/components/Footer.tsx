@@ -73,7 +73,7 @@ export default function Footer() {
                       {r.tel}
                     </a>
                     <a
-                      href={`https://wa.me/${r.whatsappLink}`}
+                      href={"https://" + "wa.me/" + r.whatsappLink}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block text-xs text-primary-light hover:text-primary transition-colors"

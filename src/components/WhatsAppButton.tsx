@@ -68,7 +68,7 @@ export default function WhatsAppButton() {
         <div className="space-y-2">
           {/* Option 1: Feltre */}
           <a
-            href={`https://wa.me/${mizuPhone}?text=${mizuMessage}`}
+            href={"https://" + "wa.me/" + mizuPhone + "?text=" + mizuMessage}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setIsOpen(false)}
@@ -89,7 +89,7 @@ export default function WhatsAppButton() {
 
           {/* Option 2: Belluno */}
           <a
-            href={`https://wa.me/${susiyanPhone}?text=${susiyanMessage}`}
+            href={"https://" + "wa.me/" + susiyanPhone + "?text=" + susiyanMessage}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setIsOpen(false)}

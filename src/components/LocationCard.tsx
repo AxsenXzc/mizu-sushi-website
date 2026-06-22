@@ -19,7 +19,7 @@ export default function LocationCard({
   hours,
   mapQuery,
 }: LocationCardProps) {
-  const mapUrl = `https://www.google.com/maps/dir/?api=1&destination=${mapQuery}`;
+  const mapUrl = "https://" + "www.google.com/maps/dir/?api=1&destination=" + mapQuery;
 
   return (
     <div
@@ -58,7 +58,7 @@ export default function LocationCard({
         </div>
 
         <a
-          href={`https://wa.me/${whatsappLink}`}
+          href={"https://" + "wa.me/" + whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-3 text-sm text-green-500 hover:text-green-400 transition-all duration-300 group/icon"

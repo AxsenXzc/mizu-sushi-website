@@ -133,7 +133,7 @@ export default function ContattiPage() {
                     </a>
                     
                     <a
-                      href={`https://wa.me/${restaurant.whatsappLink}`}
+                      href={"https://" + "wa.me/" + restaurant.whatsappLink}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex flex-col items-center justify-center p-4 bg-surface rounded-xl border border-white/5 hover:border-green-500/30 transition-all duration-300 group"
