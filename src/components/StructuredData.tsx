@@ -54,10 +54,11 @@ const structuredData = [
 ];
 
 export default function StructuredData() {
+  const json = JSON.stringify(structuredData);
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML= __html: JSON.stringify(structuredData) 
+      dangerouslySetInnerHTML= __html: json 
     />
   );
 }
