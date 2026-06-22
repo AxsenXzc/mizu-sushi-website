@@ -7,10 +7,10 @@ export const restaurants = [
     whatsapp: "+39 327 289 8873",
     whatsappLink: "393272898873",
     hours: "Lun–Dom 11:00–15:00, 18:00–23:30",
-    owner: "MIZU Ristorante S.A.S. di He Lixian & C.",
+    owner: "Mizu Sushi Ristorante",
     location: "Centro Commerciale Altanon",
     mapQuery: "Viale+Monte+Grappa+8+Feltre",
-    mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2762.5!2d11.9!3d46.0167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sViale+Monte+Grappa+8%2C+32032+Feltre+BL!5e0!3m2!1sit!2sit!4v1",
+    mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2763!2d11.9098!3d46.0184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4778e375ca3d4931%3A0x9eba204372626397!2sViale%20Monte%20Grappa%2C%208%2C%2032032%20Feltre%20BL!5e0!3m2!1sit!2sit!4v1716100000000!5m2!1sit!2sit",
     isMain: true,
   },
   {
